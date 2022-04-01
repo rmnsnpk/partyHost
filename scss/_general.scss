@@ -272,36 +272,36 @@
         background: url("../img/arrow1.png") center center/cover no-repeat;
         width: 220px;
         height: 39.6px;
-        left: 660px;
+        left: 450px;
         top: 220px;
     }
     &_arrow2 {
         background: url("../img/arrow2.png") center center/cover no-repeat;
         width: 154.51px;
         height: 59.16px;
-        left: 1000px;
-        top: 315.5px;
+        left: 800px;
+        top: 270.5px;
     }
     &_arrow3 {
         background: url("../img/arrow3.png") center center/cover no-repeat;
         width: 220px;
         height: 41.41px;
-        left: 630.95px;
-        top: 450.5px;
+        left: 430.95px;
+        top: 430.5px;
     }
     &_arrow4 {
         background: url("../img/arrow4.png") center center/cover no-repeat;
         width: 91.65px;
         height: 102.51px;
-        left: 420.91px;
-        top: 500.9px;
+        left: 220.91px;
+        top: 460.9px;
     }
     &_arrow5 {
         background: url("../img/arrow5.png") center center/cover no-repeat;
         width: 220.3px;
         height: 41.46px;
-        left: 660.96px;
-        top: 662.57px;
+        left: 450.96px;
+        top: 642.57px;
     }
 }
 
@@ -393,5 +393,140 @@
         background: url('../img/blog_img_5.png') center center/cover no-repeat;
         width: 255px;
         height: 283px;
+    }
+}
+
+.choice {
+    padding-top: 40px;
+    width: 100%;
+    height: 1477px;
+    background: url(../img/choice_bg.jpg) center center/cover no-repeat;
+    text-align: center;
+    &_title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        color: $White;
+    }
+    &_subtitle {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: $White;
+        margin: 17px 0 23px 0;
+    }
+    &_switcher {
+        height: 39px;
+        background-color: $Red;
+        border-radius: 39px;
+        color: $White;
+        border: none;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        padding: 7px 24px;
+    }
+    &_block {
+        display: flex;
+        &_card {
+            position: relative;
+            width: 350px;
+            height: 478px;
+            background-color: $White;
+            box-shadow: 0px 10px 30px rgba(89, 71, 38, 0.08);
+            border-radius: 20px;
+            padding: 24px 25px;
+            text-align: left;
+            color: #000;
+            margin: 97px 13px 0 13px;
+            &_title {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+            }
+            &_price {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 38px;
+                margin-top: 11px;
+            }
+            hr {
+                width: 303.73px;
+                height: 1px;
+                background-color: #F8F1EB;
+                border: none;
+            }
+            &_img {
+                position: absolute;
+                left: 78.86%;
+                top: 24px;
+            }
+            &_text {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                margin-top: 18px;
+            }
+            &_listName {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                margin-top: 20px;
+            }
+            &_list {
+                list-style-type: none;
+                height: 140px;
+                overflow: hidden;
+                &_item {
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    margin-bottom: 12px;
+                    &_type {
+                        margin-left: -40px;
+                        margin-right: 12px;
+                        width: 20px;
+                        height: 23px;
+                        display: inline-block;
+                    }
+                }
+            }
+            &_button {
+                width: 300px;
+                height: 54px;
+                text-align: center;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                color: $White;
+                border-radius: 8px;
+                background-color: $Red;
+                border: none;
+                &:hover {
+                    box-shadow: 0px 8px 60px rgba(219, 49, 48, 0.5);
+                }
+                &:focus {
+                    box-shadow: 0px 8px 60px rgba(219, 49, 48, 0.5);
+                }
+                &:visited,
+                &:focus,
+                &:active,
+                &:hover {
+                    outline: 0 none !important;
+                }
+            }
+            &:hover {
+                height: 552px;
+                margin-top: 23px;
+                transition: 0.3s;
+                -webkit-transition: .3s;
+                -moz-transition: .3s;
+                -o-transition: .3s;
+                .choice_block_card_list {
+                    transition: 0.3s;
+                    height: 216px;
+                }
+            }
+        }
     }
 }

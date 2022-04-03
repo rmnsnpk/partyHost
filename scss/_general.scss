@@ -1029,7 +1029,7 @@
         z-index: 6;
         background: rgba(31, 30, 29, 0.7);
         top: 0;
-        left: 0;
+        left: -100vw;
         text-align: center;
         align-items: center;
         justify-content: center;
@@ -1059,7 +1059,7 @@
                 font-size: 40px;
                 color: #3D3D30;
                 left: 271px;
-                top: calc(50% - 88px/2 + 203px);
+                top: calc(50% - 88px/2 + 190px);
             }
             &_text {
                 position: absolute;

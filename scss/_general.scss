@@ -6,6 +6,10 @@
         background: url(../img/header_bg.png) center center/cover no-repeat;
     }
     
+    .container {
+        position: relative;
+    }
+    
     .menu {
         max-height: 76px;
         padding-top: 14px;
@@ -16,6 +20,7 @@
         &_logo {
             width: 207px;
             height: 47px;
+            margin-right: 48px;
         }
         a {
             text-decoration: none;
@@ -28,18 +33,44 @@
             text-align: right;
             transition: 0.3s;
             a {
+                position: relative;
                 text-decoration: none;
                 display: inline-block;
                 border: none;
                 transition: 0.3s;
-                &:hover {
-                    transition: .1s;
-                    color: $White;
-                    border-bottom: 2px solid $Red;
+                color: $White;
+                &:before {
+                    display: block;
+                    position: absolute;
+                    content: "";
+                    height: 2px;
+                    width: 0;
+                    background-color: $Red;
+                    transition: width .3s ease-in-out, left .3s ease-in-out;
+                    left: 50%;
+                    bottom: 0;
+                }
+                &:after {
+                    display: block;
+                    position: absolute;
+                    content: "";
+                    height: 2px;
+                    width: 0;
+                    background-color: red;
+                    transition: width .3s ease-in-out;
+                    left: 50%;
+                    bottom: 0;
+                }
+                &:hover::before {
+                    width: 50%;
+                    left: 0;
+                }
+                &:hover::after {
+                    width: 50%;
                 }
             }
             li {
-                margin-right: 40px;
+                margin-right: 32px;
                 transition: 0.3s;
             }
             &_item {
@@ -62,6 +93,7 @@
             margin-left: 90px;
         }
         &_connect {
+            display: flex;
             &_number {
                 font-style: normal;
                 font-weight: 400;
@@ -92,17 +124,12 @@
                     cursor: pointer;
                 }
             }
-        }
-        &_inst {
-            display: block;
-            position: absolute;
-            width: 48px;
-            height: 48px;
-            background-color: $Red;
-            border-radius: 24px;
-            text-align: center;
-            left: 207px;
-            top: 4px;
+            &_inst {
+                display: inline-block;
+                width: 48px;
+                height: 48px;
+                margin-left: 18px;
+            }
         }
     }
     
@@ -113,7 +140,7 @@
         z-index: 1;
         width: 100%;
         hr {
-            margin: -10px 0 0 90px;
+            margin: 0px 0 0 90px;
             width: 160px;
             height: 5px;
             border: none;
@@ -171,7 +198,7 @@
             }
         }
         &_img {
-            margin-left: -25px;
+            margin-left: 30px;
         }
     }
     
@@ -191,13 +218,18 @@
             border-radius: 8px;
             transition: 0.5s;
             &_img {
+                display: inline-block;
                 margin-bottom: 15px;
+                transition: 0.5s;
+                width: 110px;
+                height: 110px;
             }
             &_text {
                 font-style: normal;
                 font-weight: 500;
                 font-size: 25px;
                 color: #000;
+                transition: 0.5s;
             }
             a {
                 text-decoration: none;
@@ -215,12 +247,12 @@
                 position: absolute;
                 left: 40px;
                 top: 120px;
-                opacity: 0;
                 text-decoration: none;
                 padding-top: 12px;
                 &:hover {
                     box-shadow: 0px 8px 20px rgba(219, 49, 48, 0.5);
                     color: $White;
+                    transition: 0.3s;
                 }
                 &:focus {
                     box-shadow: 0px 8px 20px rgba(219, 49, 48, 0.5);
@@ -232,23 +264,24 @@
                     outline: 0 none !important;
                 }
             }
-            &:hover {
-                transition: 1s;
-                .types_card_img {
-                    width: 90px;
-                    display: inline;
-                    transition: .5s;
-                }
-                .types_card_text {
-                    opacity: 0;
-                    transition: .5s;
-                }
-                .types_card_button {
-                    opacity: 1;
-                    transition: .5s;
-                }
-            }
         }
+    }
+    
+    .types_card_2_img {
+        width: 90px;
+        height: 90px;
+        display: inline;
+        transition: .5s;
+    }
+    
+    .types_card_2_img {
+        opacity: 0;
+        transition: .5s;
+    }
+    
+    .types_card_2_img {
+        opacity: 1;
+        transition: .5s;
     }
     
     .stages {
@@ -266,6 +299,15 @@
             font-weight: 700;
             font-size: 50px;
             color: #3D3D30;
+        }
+        &_titleBack {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 65px;
+            color: rgba(61, 61, 48, 0.05);
+            position: absolute;
+            top: -15px;
+            left: -5px;
         }
         &_img {
             width: 87px;
@@ -296,35 +338,35 @@
             width: 220px;
             height: 39.6px;
             left: 450px;
-            top: 220px;
+            top: 200px;
         }
         &_arrow2 {
             background: url("../img/arrow2.png") center center/cover no-repeat;
             width: 154.51px;
             height: 59.16px;
             left: 800px;
-            top: 270.5px;
+            top: 250.5px;
         }
         &_arrow3 {
             background: url("../img/arrow3.png") center center/cover no-repeat;
             width: 220px;
             height: 41.41px;
             left: 430.95px;
-            top: 430.5px;
+            top: 410.5px;
         }
         &_arrow4 {
             background: url("../img/arrow4.png") center center/cover no-repeat;
             width: 91.65px;
             height: 102.51px;
             left: 220.91px;
-            top: 460.9px;
+            top: 440.9px;
         }
         &_arrow5 {
             background: url("../img/arrow5.png") center center/cover no-repeat;
             width: 220.3px;
             height: 41.46px;
             left: 450.96px;
-            top: 642.57px;
+            top: 622.57px;
         }
     }
     
@@ -423,13 +465,14 @@
         height: 330px;
         width: 100%;
         background: url("../img/inst_bg.png") center center/cover no-repeat;
-        padding: 40px 0;
+        padding: 31px 0;
         &_title {
             font-style: normal;
             font-weight: 600;
             font-size: 38px;
             color: $White;
             display: inline-block;
+            margin: 0;
         }
         &_link {
             font-style: normal;
@@ -444,9 +487,9 @@
         }
         &_line {
             position: absolute;
-            top: 50px;
-            left: 760px;
-            width: 299px;
+            top: 45px;
+            left: 770px;
+            width: 293px;
             height: 0px;
             border: 1px solid #DB3130;
             background-color: $Red;
@@ -454,7 +497,7 @@
         }
         &_photos {
             display: flex;
-            margin-top: 22px;
+            margin-top: 17px;
             justify-content: space-between;
         }
     }
@@ -468,14 +511,20 @@
         .choice_switcher_wedding {
             background-color: $Red;
         }
-        .weddingBtn {
-            margin-top: -30px;
-        }
         &_title {
             font-style: normal;
             font-weight: 700;
             font-size: 50px;
             color: $White;
+        }
+        &_titleBack {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 65px;
+            position: absolute;
+            left: 482px;
+            top: -15px;
+            color: rgba(245, 245, 245, 0.08);
         }
         &_subtitle {
             font-style: normal;
@@ -516,7 +565,7 @@
                 background-color: $White;
                 box-shadow: 0px 10px 30px rgba(89, 71, 38, 0.08);
                 border-radius: 20px;
-                padding: 24px 25px;
+                padding: 24px 5px 0 25px;
                 text-align: left;
                 color: #000;
                 margin: 97px 13px 0 13px;
@@ -584,6 +633,9 @@
                     border-radius: 8px;
                     background-color: $Red;
                     border: none;
+                    position: absolute;
+                    left: 7.39%;
+                    top: 85.87%;
                     &:hover {
                         box-shadow: 0px 8px 60px rgba(219, 49, 48, 0.5);
                     }
@@ -604,6 +656,33 @@
                     -webkit-transition: .3s;
                     -moz-transition: .3s;
                     -o-transition: .3s;
+                    button {
+                        width: 300px;
+                        height: 54px;
+                        text-align: center;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        color: $White;
+                        border-radius: 8px;
+                        background-color: $Red;
+                        border: none;
+                        position: absolute;
+                        left: 7.39%;
+                        top: 85.87%;
+                        &:hover {
+                            box-shadow: 0px 8px 60px rgba(219, 49, 48, 0.5);
+                        }
+                        &:focus {
+                            box-shadow: 0px 8px 60px rgba(219, 49, 48, 0.5);
+                        }
+                        &:visited,
+                        &:focus,
+                        &:active,
+                        &:hover {
+                            outline: 0 none !important;
+                        }
+                    }
                     .choice_block_card_list {
                         transition: 0.3s;
                         height: 216px;
@@ -726,6 +805,16 @@
             font-size: 50px;
             margin-bottom: 23px;
         }
+        &_titleBack {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 65px;
+            line-height: 25px;
+            color: rgba(0, 0, 0, 0.06);
+            position: absolute;
+            left: 427px;
+            top: 28px;
+        }
         &_line {
             display: inline-block;
             width: 85px;
@@ -749,6 +838,9 @@
                 transition: 0.3s;
                 color: #1F1C16 !important;
                 margin: 0 18px 48px 18px;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
                 &::placeholder {
                     font-style: normal;
                     font-weight: 500;
@@ -837,6 +929,7 @@
                     width: 100%;
                     border: 1px solid #DB3130;
                     border-radius: 5px;
+                    background-color: $Red;
                 }
             }
             &_mail {
@@ -855,7 +948,7 @@
                     font-style: normal;
                     font-weight: 500;
                     font-size: 20px;
-                    margin-bottom: 20px;
+                    margin-bottom: 18px;
                 }
                 &_img {
                     margin-bottom: 18px;
@@ -899,7 +992,7 @@
         z-index: 6;
         background: rgba(31, 30, 29, 0.7);
         top: 0;
-        left: -100vw;
+        left: 100vw;
         text-align: center;
         align-items: center;
         justify-content: center;
@@ -1029,7 +1122,7 @@
         z-index: 6;
         background: rgba(31, 30, 29, 0.7);
         top: 0;
-        left: -100vw;
+        left: 100vw;
         text-align: center;
         align-items: center;
         justify-content: center;
@@ -1045,11 +1138,52 @@
             width: 914px;
             height: 746px;
             background: url("../img/blogpop_bg.png") center center/cover no-repeat;
+            border-radius: 10px;
             &_slider {
                 &_img {
                     width: 465px;
                     height: 490px;
                     margin: 112px 15px 0 15px;
+                    border-radius: 6px;
+                    transition: 0.3s;
+                }
+            }
+            &_prev {
+                position: absolute;
+                left: 40px;
+                top: 380px;
+                z-index: 3;
+                cursor: pointer;
+                &:hover {
+                    box-shadow: 0px 8px 60px rgba(219, 49, 48, 0.5);
+                }
+                &:focus {
+                    box-shadow: 0px 8px 60px rgba(219, 49, 48, 0.5);
+                }
+                &:visited,
+                &:focus,
+                &:active,
+                &:hover {
+                    outline: 0 none !important;
+                }
+            }
+            &_next {
+                position: absolute;
+                right: 40px;
+                top: 380px;
+                z-index: 3;
+                cursor: pointer;
+                &:hover {
+                    box-shadow: 0px 8px 60px rgba(219, 49, 48, 0.5);
+                }
+                &:focus {
+                    box-shadow: 0px 8px 60px rgba(219, 49, 48, 0.5);
+                }
+                &:visited,
+                &:focus,
+                &:active,
+                &:hover {
+                    outline: 0 none !important;
                 }
             }
             &_title {
@@ -1076,7 +1210,7 @@
             &_close {
                 position: absolute;
                 top: 10px;
-                left: 985px;
+                left: 930px;
                 cursor: pointer;
             }
         }

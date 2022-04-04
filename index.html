@@ -17,8 +17,8 @@
     <header class="menu">
         <div class="container">
             <div class="row">
-                <img src="./img/logo.png" alt="logo" class="menu_logo col-md-2">
-                <nav class="col-md-7">
+                <img src="./img/logo.png" alt="logo" class="menu_logo">
+                <nav>
                     <ul class="menu_list">
                         <li><a href="#" class="menu_list_item menu_list_item_first">Этапы работы</a></li>
                         <li><a href="#" class="menu_list_item">Блог</a></li>
@@ -27,14 +27,14 @@
                         <li><a href="#" class="menu_list_item menu_list_item_last">Контакты</a></li>
                     </ul>
                 </nav>
-                <div class=" col-md-3 menu_connect">
+                <div class="menu_connect">
                     <div>
                         <a href="tel:+375292900600" class="menu_connect_number">+375(29)2-900-600</a>
                         <br>
                         <img src="./img/tel_small.png" alt="phone" class="menu_connect_img">
                         <p class="menu_connect_text">Заказать звонок</p>
                     </div>
-                    <a href="#" class="menu_inst">
+                    <a href="#" class="menu_connect_inst">
                         <img src="./img/main_inst.png" alt="inst" class="menu_inst_img">
                     </a>
                 </div>
@@ -63,29 +63,29 @@
                 <div class="col-md-3">
                     <div class="types_card">
                         <img src="./img/wedding_card.png" alt="wedding" class="types_card_img">
-                        <p class="types_card_text">Свадьбы</p>
-                        <a href="#choice" class="types_card_button" onclick="choose1()">Подробнее</a>
+                        <br>
+                        <a href="#choice" class="types_card_text" onclick="choose1()">Свадьбы</a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="types_card">
                         <img src="./img/bithday.png" alt="bth" class="types_card_img">
-                        <p class="types_card_text">Дни Рождения</p>
-                        <a href="#choice" class="types_card_button" onclick="choose3()">Подробнее</a>
+                        <br>
+                        <a href="#choice" class="types_card_text" onclick="choose3()">Дни Рождения</a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="types_card">
                         <img src="./img/grad.png" alt="graduate" class="types_card_img">
-                        <p class="types_card_text">Выпускные</p>
-                        <a href="#choice" class="types_card_button" onclick="choose2()">Подробнее</a>
+                        <br>
+                        <a href="#choice" class="types_card_text" onclick="choose2()">Выпускные</a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="types_card">
                         <img src="./img/coorp.png" alt="corporation" class="types_card_img">
-                        <p class="types_card_text">Корпоративы</p>
-                        <a href="#choice" class="types_card_button" onclick="choose2()">Подробнее</a>
+                        <br>
+                        <a href="#choice" class="types_card_text" onclick="choose2()">Корпоратив</a>
                     </div>
                 </div>
             </div>
@@ -93,6 +93,7 @@
     </section>
     <section id="stages" class="stages">
         <div class="container" style="position: relative;">
+            <h2 class="stages_titleBack">Этапы работы</h2>
             <h2 class="stages_title">Этапы работы</h2>
             <div class="stages_arrow stages_arrow1"></div>
             <div class="stages_arrow stages_arrow2"></div>
@@ -205,176 +206,177 @@
     <section id="choice" class="choice">
         <div class="container justPoint">
             <h2 class="choice_title">Выбери свой вариант праздника!</h2>
-            <h3 class="choice_subtitle">* Цена может измениться при заказе доп. услуг для мероприятия</h3>
-            <button class="choice_switcher choice_switcher_wedding" onclick="choose1()">Свадьба</button>
-            <button class="choice_switcher choice_switcher_corp" onclick="choose2()">Корпоратив</button>
-            <button class="choice_switcher choice_switcher_bth" onclick="choose3()">День Рождения</button>
-            <div class="choice_wedding choice_block">
-                <div class="choice_block_card">
-                    <h2 class="choice_block_card_title">Эконом</h2>
-                    <h3 class="choice_block_card_price">$200</h3>
-                    <img src="./img/choice_card.png" alt="xz" class="choice_block_card_img">
-                    <hr>
-                    <p class="choice_block_card_text">Подойдет для небольшой свадьбы или выездной регистрации</p>
-                    <h3 class="choice_block_card_listName">Что входит в пакет </h3>
-                    <ul class="choice_block_card_list">
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Ведение мероприятия -4 ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Администрирование - 4 ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Звуковое сопровождение - 3 ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ - 3 ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Минимальный комплект звука -4 ч</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Индивидуальный сценарий </li>
-                    </ul>
-                    <button class="choice_block_card_button open">Подробнее</button>
+            <h2 class="choice_titleBack">Цены</р>
+                <h3 class="choice_subtitle">* Цена может измениться при заказе доп. услуг для мероприятия</h3>
+                <button class="choice_switcher choice_switcher_wedding" onclick="choose1()">Свадьба</button>
+                <button class="choice_switcher choice_switcher_corp" onclick="choose2()">Корпоратив</button>
+                <button class="choice_switcher choice_switcher_bth" onclick="choose3()">День Рождения</button>
+                <div class="choice_wedding choice_block">
+                    <div class="choice_block_card">
+                        <h2 class="choice_block_card_title">Эконом</h2>
+                        <h3 class="choice_block_card_price">$200</h3>
+                        <img src="./img/choice_card.png" alt="xz" class="choice_block_card_img">
+                        <hr>
+                        <p class="choice_block_card_text">Подойдет для небольшой свадьбы или выездной регистрации</p>
+                        <h3 class="choice_block_card_listName">Что входит в пакет </h3>
+                        <ul class="choice_block_card_list">
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Ведение мероприятия -4 ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Администрирование - 4 ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Звуковое сопровождение - 3 ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ - 3 ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Минимальный комплект звука -4 ч</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Индивидуальный сценарий </li>
+                        </ul>
+                        <button class="choice_block_card_button open">Подробнее</button>
 
-                </div>
-                <div class="choice_block_card choice_block_card_big">
-                    <h2 class="choice_block_card_title">Стандарт</h2>
-                    <h3 class="choice_block_card_price">$300</h3>
-                    <img src="./img/choice_card.png" alt="xz" class="choice_block_card_img">
-                    <hr>
-                    <p>Стандартный вариант проведения вашей свадьбы с индивидуальным подходом</p>
-                    <h3 class="choice_block_card_listName">Что входит в пакет </h3>
-                    <ul class="choice_block_card_list">
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Индивидуальный сценарий </li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Ведение мероприятия -6 ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Администрирование - 6 ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Звуковое сопровождение - 6 ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ - 3 ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Специальный комплект звука -4 ч</li>
-                    </ul>
-                    <button class="choice_block_card_button weddingBtn open">Подробнее</button>
+                    </div>
+                    <div class="choice_block_card choice_block_card_big">
+                        <h2 class="choice_block_card_title">Стандарт</h2>
+                        <h3 class="choice_block_card_price">$300</h3>
+                        <img src="./img/choice_card.png" alt="xz" class="choice_block_card_img">
+                        <hr>
+                        <p>Стандартный вариант проведения вашей свадьбы с индивидуальным подходом</p>
+                        <h3 class="choice_block_card_listName">Что входит в пакет </h3>
+                        <ul class="choice_block_card_list">
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Индивидуальный сценарий </li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Ведение мероприятия -6 ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Администрирование - 6 ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Звуковое сопровождение - 6 ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ - 3 ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Специальный комплект звука -4 ч</li>
+                        </ul>
+                        <button class="choice_block_card_button weddingBtn open">Подробнее</button>
 
-                </div>
-                <div class="choice_block_card">
-                    <h2 class="choice_block_card_title">Премиум</h2>
-                    <h3 class="choice_block_card_price">$450</h3>
-                    <img src="./img/choice_card.png" alt="xz" class="choice_block_card_img">
-                    <hr>
-                    <p class="choice_block_card_text">Премиум позволит вам освободится от рутины перед праздником</p>
-                    <h3 class="choice_block_card_listName">Что входит в пакет </h3>
-                    <ul class="choice_block_card_list">
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Эксклюзивный сценарий</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Помощь в организации праздника </li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Длительность мероприятия - 7ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">VIP сопровождение</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ - 6 ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Специальный комплект звука -6 ч.</li>
-                    </ul>
-                    <button class="choice_block_card_button  open">Подробнее</button>
+                    </div>
+                    <div class="choice_block_card">
+                        <h2 class="choice_block_card_title">Премиум</h2>
+                        <h3 class="choice_block_card_price">$450</h3>
+                        <img src="./img/choice_card.png" alt="xz" class="choice_block_card_img">
+                        <hr>
+                        <p class="choice_block_card_text">Премиум позволит вам освободится от рутины перед праздником</p>
+                        <h3 class="choice_block_card_listName">Что входит в пакет </h3>
+                        <ul class="choice_block_card_list">
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Эксклюзивный сценарий</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Помощь в организации праздника </li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Длительность мероприятия - 7ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">VIP сопровождение</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ - 6 ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Специальный комплект звука -6 ч.</li>
+                        </ul>
+                        <button class="choice_block_card_button  open">Подробнее</button>
 
+                    </div>
                 </div>
-            </div>
-            <div class="choice_corp choice_block">
-                <div class="choice_block_card">
-                    <h2 class="choice_block_card_title">Эконом</h2>
-                    <h3 class="choice_block_card_price">$150</h3>
-                    <img src="./img/choice_card.png" alt="xz" class="choice_block_card_img">
-                    <hr>
-                    <p class="choice_block_card_text">Подойдет для небольшого праздника вашей компании или фуршета</p>
-                    <h3 class="choice_block_card_listName">Что входит в пакет </h3>
-                    <ul class="choice_block_card_list">
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Ведение мероприятия -2.5 ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Администрирование - 2.5 ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Звуковое сопровождение - 1.5 ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ - 2.5ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Минимальный комплект звука-2.5ч</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Индивидуальный сценарий </li>
-                    </ul>
-                    <button class="choice_block_card_button  open">Подробнее</button>
-                </div>
-                <div class="choice_block_card choice_block_card_big">
-                    <h2 class="choice_block_card_title">Стандарт</h2>
-                    <h3 class="choice_block_card_price">$250</h3>
-                    <img src="./img/choice_card.png" alt="xz" class="choice_block_card_img">
-                    <hr>
-                    <p>Стандартный вариант проведения корпаративка компании</p>
-                    <h3 class="choice_block_card_listName">Что входит в пакет </h3>
-                    <ul class="choice_block_card_list">
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Индивидуальный сценарий </li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Ведение мероприятия -4.5ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Администрирование -4.5ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Звуковое сопровождение -4.5ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ -4.5ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Специальный комплект звука -4.5ч</li>
-                    </ul>
-                    <button class="choice_block_card_button  open">Подробнее</button>
+                <div class="choice_corp choice_block">
+                    <div class="choice_block_card">
+                        <h2 class="choice_block_card_title">Эконом</h2>
+                        <h3 class="choice_block_card_price">$150</h3>
+                        <img src="./img/choice_card.png" alt="xz" class="choice_block_card_img">
+                        <hr>
+                        <p class="choice_block_card_text">Подойдет для небольшого праздника вашей компании или фуршета</p>
+                        <h3 class="choice_block_card_listName">Что входит в пакет </h3>
+                        <ul class="choice_block_card_list">
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Ведение мероприятия -2.5 ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Администрирование - 2.5 ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Звуковое сопровождение - 1.5 ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ - 2.5ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Минимальный комплект звука-2.5ч</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Индивидуальный сценарий </li>
+                        </ul>
+                        <button class="choice_block_card_button  open">Подробнее</button>
+                    </div>
+                    <div class="choice_block_card choice_block_card_big">
+                        <h2 class="choice_block_card_title">Стандарт</h2>
+                        <h3 class="choice_block_card_price">$250</h3>
+                        <img src="./img/choice_card.png" alt="xz" class="choice_block_card_img">
+                        <hr>
+                        <p>Стандартный вариант проведения корпаративка компании</p>
+                        <h3 class="choice_block_card_listName">Что входит в пакет </h3>
+                        <ul class="choice_block_card_list">
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Индивидуальный сценарий </li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Ведение мероприятия -4.5ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Администрирование -4.5ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Звуковое сопровождение -4.5ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ -4.5ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Специальный комплект звука -4.5ч</li>
+                        </ul>
+                        <button class="choice_block_card_button  open">Подробнее</button>
 
-                </div>
-                <div class="choice_block_card">
-                    <h2 class="choice_block_card_title">Премиум</h2>
-                    <h3 class="choice_block_card_price">$400</h3>
-                    <img src="./img/choice_card.png" alt="xz" class="choice_block_card_img">
-                    <hr>
-                    <p class="choice_block_card_text">Премиум позволит вам освободится от рутины перед праздником</p>
-                    <h3 class="choice_block_card_listName">Что входит в пакет </h3>
-                    <ul class="choice_block_card_list">
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Эксклюзивный сценарий</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Помощь в организации праздника </li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Длительность мероприятия - 6ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">VIP сопровождение</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ - 4.5ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Специальный комплект звука -5ч.</li>
-                    </ul>
-                    <button class="choice_block_card_button open">Подробнее</button>
+                    </div>
+                    <div class="choice_block_card">
+                        <h2 class="choice_block_card_title">Премиум</h2>
+                        <h3 class="choice_block_card_price">$400</h3>
+                        <img src="./img/choice_card.png" alt="xz" class="choice_block_card_img">
+                        <hr>
+                        <p class="choice_block_card_text">Премиум позволит вам освободится от рутины перед праздником</p>
+                        <h3 class="choice_block_card_listName">Что входит в пакет </h3>
+                        <ul class="choice_block_card_list">
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Эксклюзивный сценарий</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Помощь в организации праздника </li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Длительность мероприятия - 6ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">VIP сопровождение</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ - 4.5ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Специальный комплект звука -5ч.</li>
+                        </ul>
+                        <button class="choice_block_card_button open">Подробнее</button>
 
+                    </div>
                 </div>
-            </div>
-            <div class="choice_bth choice_block">
-                <div class="choice_block_card">
-                    <h2 class="choice_block_card_title">Эконом</h2>
-                    <h3 class="choice_block_card_price">$150</h3>
-                    <img src="./img/choice_card.png" alt="xz" class="choice_block_card_img">
-                    <hr>
-                    <p class="choice_block_card_text">Отлично подойдёт для проведения Дня Рождения в компании близких</p>
-                    <h3 class="choice_block_card_listName">Что входит в пакет </h3>
-                    <ul class="choice_block_card_list">
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Ведение мероприятия -2.5 ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Администрирование - 2.5 ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Звуковое сопровождение - 1.5 ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ - 2.5 ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Минимальный комплект звука -2.5 ч</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Индивидуальный сценарий </li>
-                    </ul>
-                    <button class="choice_block_card_button  open">Подробнее</button>
-                </div>
-                <div class="choice_block_card choice_block_card_big">
-                    <h2 class="choice_block_card_title">Стандарт</h2>
-                    <h3 class="choice_block_card_price">$250</h3>
-                    <img src="./img/choice_card.png" alt="xz" class="choice_block_card_img">
-                    <hr>
-                    <p>Индивидуальный сценарий проведения любово вашего торжества </p>
-                    <h3 class="choice_block_card_listName">Что входит в пакет </h3>
-                    <ul class="choice_block_card_list">
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Индивидуальный сценарий </li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Ведение мероприятия -4.5 ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Администрирование -4.5 ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Звуковое сопровождение -4.5 ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ -4.5 ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Специальный комплект звука-4.5 ч</li>
-                    </ul>
-                    <button class="choice_block_card_button  open">Подробнее</button>
+                <div class="choice_bth choice_block">
+                    <div class="choice_block_card">
+                        <h2 class="choice_block_card_title">Эконом</h2>
+                        <h3 class="choice_block_card_price">$150</h3>
+                        <img src="./img/choice_card.png" alt="xz" class="choice_block_card_img">
+                        <hr>
+                        <p class="choice_block_card_text">Отлично подойдёт для проведения Дня Рождения в компании близких</p>
+                        <h3 class="choice_block_card_listName">Что входит в пакет </h3>
+                        <ul class="choice_block_card_list">
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Ведение мероприятия -2.5 ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Администрирование -2.5 ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Звуковое сопровождение -1.5 ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ -2.5 ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Минимальный комплект звука -2.5ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Индивидуальный сценарий </li>
+                        </ul>
+                        <button class="choice_block_card_button  open">Подробнее</button>
+                    </div>
+                    <div class="choice_block_card choice_block_card_big">
+                        <h2 class="choice_block_card_title">Стандарт</h2>
+                        <h3 class="choice_block_card_price">$250</h3>
+                        <img src="./img/choice_card.png" alt="xz" class="choice_block_card_img">
+                        <hr>
+                        <p>Индивидуальный сценарий проведения любово вашего торжества </p>
+                        <h3 class="choice_block_card_listName">Что входит в пакет </h3>
+                        <ul class="choice_block_card_list">
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Индивидуальный сценарий </li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Ведение мероприятия -4.5 ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Администрирование -4.5 ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Звуковое сопровождение -4.5 ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ -4.5 ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Специальный комплект звука-4.5 ч</li>
+                        </ul>
+                        <button class="choice_block_card_button  open">Подробнее</button>
 
-                </div>
-                <div class="choice_block_card">
-                    <h2 class="choice_block_card_title">Премиум</h2>
-                    <h3 class="choice_block_card_price">$400</h3>
-                    <img src="./img/choice_card.png" alt="xz" class="choice_block_card_img">
-                    <hr>
-                    <p class="choice_block_card_text">Премиум позволит вам освободится от рутины перед праздником</p>
-                    <h3 class="choice_block_card_listName">Что входит в пакет </h3>
-                    <ul class="choice_block_card_list">
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Эксклюзивный сценарий</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Помощь в организации праздника </li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Длительность мероприятия - 6ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">VIP сопровождение</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ - 4.5 ч.</li>
-                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Специальный комплект звука -5 ч.</li>
-                    </ul>
-                    <button class="choice_block_card_button  open">Подробнее</button>
+                    </div>
+                    <div class="choice_block_card">
+                        <h2 class="choice_block_card_title">Премиум</h2>
+                        <h3 class="choice_block_card_price">$400</h3>
+                        <img src="./img/choice_card.png" alt="xz" class="choice_block_card_img">
+                        <hr>
+                        <p class="choice_block_card_text">Премиум позволит вам освободится от рутины перед праздником</p>
+                        <h3 class="choice_block_card_listName">Что входит в пакет </h3>
+                        <ul class="choice_block_card_list">
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Эксклюзивный сценарий</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Помощь в организации праздника </li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Длительность мероприятия - 6ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">VIP сопровождение</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ - 4.5 ч.</li>
+                            <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Специальный комплект звука -5 ч.</li>
+                        </ul>
+                        <button class="choice_block_card_button  open">Подробнее</button>
 
+                    </div>
                 </div>
-            </div>
         </div>
 
         <div class="container" style="position: relative;">
@@ -467,6 +469,7 @@
     <section class="contact">
         <div class="container">
             <h2 class="contact_title">Оставьте заявку онлайн</h2>
+            <h2 class="contact_titleBack">Контакты</h2>
             <div class="contact_line"></div>
             <h3 class="contact_subtitle">Узнайте прямо сейчас, свободна ли ваша дата </h3>
             <form action="./telegram.php">
@@ -510,20 +513,22 @@
     </footer>
     <section class="toDialog">
         <div class="container" style="position: relative;">
-            <div class="toDialog_block">
-                <h2 class="toDialog_block_title">Планируете мероприятие?</h2>
-                <h3 class="toDialog_block_subtitle">Давайте создадим ваш праздник вместе!</h3>
-            </div>
-            <div class="toDialog_card">
-                <h2 class="toDialog_card_title">Заполните форму, чтобы оставить заявку </h2>
-                <h3 class="toDialog_card_subtitle">И я свяжусь с вами для уточнения даты встречи</h3>
-                <form action="./telegram.php" class="toDialog_card_form">
-                    <input type="text" class="toDialog_card_form_input name" placeholder="Имя" name="user_name">
-                    <input type="text" class="toDialog_card_form_input phone" placeholder="Телефон" name="user_phone">
-                    <button type="submit" class="toDialog_card_form_button" name="user_data">Хочу встретиться!</button>
-                </form>
-                <h6 class="toDialog_card_text">Я даю соглсаие на оброботку персональных данных</h6>
-                <img src="./img/close.png" alt="close" class="toDialog_card_close">
+            <div class="toDialog_item">
+                <div class="toDialog_block">
+                    <h2 class="toDialog_block_title">Планируете мероприятие?</h2>
+                    <h3 class="toDialog_block_subtitle">Давайте создадим ваш праздник вместе!</h3>
+                </div>
+                <div class="toDialog_card">
+                    <h2 class="toDialog_card_title">Заполните форму, чтобы оставить заявку </h2>
+                    <h3 class="toDialog_card_subtitle">И я свяжусь с вами для уточнения даты встречи</h3>
+                    <form action="./telegram.php" class="toDialog_card_form">
+                        <input type="text" class="toDialog_card_form_input name" placeholder="Имя" name="user_name">
+                        <input type="text" class="toDialog_card_form_input phone" placeholder="Телефон" name="user_phone">
+                        <button type="submit" class="toDialog_card_form_button" name="user_data">Хочу встретиться!</button>
+                    </form>
+                    <h6 class="toDialog_card_text">Я даю соглсаие на оброботку персональных данных</h6>
+                    <img src="./img/close.png" alt="close" class="toDialog_card_close">
+                </div>
             </div>
         </div>
     </section>
@@ -539,8 +544,11 @@
                 <h2 class="blogpop_card_title">Свадьба <br> Виктории и Евгения </h2>
                 <p class="blogpop_card_text">Хочется поделиться с вами замечательной свадьбой Тем более, что это свадьба моего брата Евгения и уже теперешней его жены Виктории!! 🤩 Хочу, чтобы у них появилось вдвое больше тех качеств, которыми должны обладать крепкие семьи!! Люблю
                     вас, будьте счастливы!!</p>
+                <img src="./img/close_pop.png" alt="close" class="blogpop_card_close blogpop1_card_close">
+                <img src="./img/prev_arrow.png" alt="prev" class="blogpop_card_prev">
+                <img src="./img/next_arrow.png" alt="next" class="blogpop_card_next">
             </div>
-            <img src="./img/close_pop.png" alt="close" class="blogpop_card_close blogpop1_card_close">
+
         </div>
     </section>
 
@@ -552,15 +560,3 @@
 </body>
 
 </html>
-
-<!-- <section class="blogpop blogpop1">
-    <div class="container">
-        <div class="blogpop_slider">
-            <img src="" alt="photo" class="blogpop_slider_img">
-            <img src="" alt="photo" class="blogpop_slider_img">
-            <img src="" alt="photo" class="blogpop_slider_img">
-        </div>
-        <h2 class="blogpop_title"></h2>
-        <p class="blogpop_text"></p>
-    </div>
-</section> -->

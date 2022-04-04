@@ -1,44 +1,3 @@
-$(document).ready(function() {
-    $('.choice_slider').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        prevArrow: document.getElementsByClassName('choice_prev'),
-        nextArrow: document.getElementsByClassName('choice_next'),
-        responsive: [{
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    arrows: false
-                }
-            },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    arrows: false
-                }
-            },
-        ]
-    });
-    $('.blogpop_card_slider').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        centerMode: true,
-        centerPadding: "200px"
-    });
-
-});
-
 let block = document.querySelectorAll(".choice_block");
 
 block.forEach((block) => {
@@ -146,11 +105,89 @@ $(function() {
     $(".phone").mask("+375 (99) 999-99-99", { placeholder: " " });
 });
 
-document.querySelector(".blogpop1_card_close").onclick = function close() {
-    document.querySelector(".blogpop1").style.left = "100vw";
+
+
+let cards = document.querySelectorAll(".types_card");
+
+cards.forEach((card, index) => {
+    function resizerCard1() {
+        card.children[0].classList.add("types_card_2_img");
+        card.children[2].classList.add("types_card_button");
+        card.children[2].innerHTML = "Подробнее";
+    }
+
+    function resizerCard2() {
+        let arr = ["Свадьбы", "Дни Рождения", "Выпускные", "Корпоративы"]
+        card.children[0].classList.remove("types_card_2_img");
+        card.children[2].classList.remove("types_card_button");
+        card.children[2].innerHTML = arr[index];
+    }
+    card.addEventListener("mouseover", resizerCard1);
+    card.addEventListener("mouseleave", resizerCard2);
+})
+
+$(document).mouseup(function(e) {
+    var container = $(".blogpop_card");
+    if (container.has(e.target).length === 0) {
+        document.querySelector(".blogpop1").style.left = "100vw";
+        return false;
+    }
+});
+$(document).mouseup(function(e) {
+    var container = $(".toDialog_item");
+    if (container.has(e.target).length === 0) {
+        document.querySelector(".toDialog").style.left = "100vw";
+        return false;
+    }
+});
+
+document.querySelector(".blogpop_card_close").onclick = function close() {
+    document.querySelector(".blogpop").style.left = "100vw";
     return false;
 }
 document.querySelector(".blog_card1").onclick = function open() {
     document.querySelector(".blogpop1").style.left = "0";
     return false;
 }
+$(document).ready(function() {
+    $('.choice_slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: document.getElementsByClassName('choice_prev'),
+        nextArrow: document.getElementsByClassName('choice_next'),
+        responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false
+                }
+            },
+        ]
+    });
+    $('.blogpop_card_slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        centerMode: true,
+        centerPadding: "200px",
+        prevArrow: document.getElementsByClassName('blogpop_card_prev'),
+        nextArrow: document.getElementsByClassName('blogpop_card_next'),
+    });
+
+});

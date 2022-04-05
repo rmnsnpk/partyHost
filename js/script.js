@@ -127,9 +127,37 @@ cards.forEach((card, index) => {
 })
 
 $(document).mouseup(function(e) {
-    var container = $(".blogpop_card");
+    var container = $(".blogpop1_card");
     if (container.has(e.target).length === 0) {
         document.querySelector(".blogpop1").style.left = "100vw";
+        return false;
+    }
+});
+$(document).mouseup(function(e) {
+    var container = $(".blogpop2_card");
+    if (container.has(e.target).length === 0) {
+        document.querySelector(".blogpop2").style.left = "100vw";
+        return false;
+    }
+});
+$(document).mouseup(function(e) {
+    var container = $(".blogpop3_card");
+    if (container.has(e.target).length === 0) {
+        document.querySelector(".blogpop3").style.left = "100vw";
+        return false;
+    }
+});
+$(document).mouseup(function(e) {
+    var container = $(".blogpop4_card");
+    if (container.has(e.target).length === 0) {
+        document.querySelector(".blogpop4").style.left = "100vw";
+        return false;
+    }
+});
+$(document).mouseup(function(e) {
+    var container = $(".blogpop5_card");
+    if (container.has(e.target).length === 0) {
+        document.querySelector(".blogpop5").style.left = "100vw";
         return false;
     }
 });
@@ -141,12 +169,44 @@ $(document).mouseup(function(e) {
     }
 });
 
-document.querySelector(".blogpop_card_close").onclick = function close() {
-    document.querySelector(".blogpop").style.left = "100vw";
+document.querySelector(".blogpop1_card_close").onclick = function close() {
+    document.querySelector(".blogpop1").style.left = "100vw";
+    return false;
+}
+document.querySelector(".blogpop2_card_close").onclick = function close() {
+    document.querySelector(".blogpop2").style.left = "100vw";
+    return false;
+}
+document.querySelector(".blogpop3_card_close").onclick = function close() {
+    document.querySelector(".blogpop3").style.left = "100vw";
+    return false;
+}
+document.querySelector(".blogpop4_card_close").onclick = function close() {
+    document.querySelector(".blogpop4").style.left = "100vw";
+    return false;
+}
+document.querySelector(".blogpop5_card_close").onclick = function close() {
+    document.querySelector(".blogpop5").style.left = "100vw";
     return false;
 }
 document.querySelector(".blog_card1").onclick = function open() {
     document.querySelector(".blogpop1").style.left = "0";
+    return false;
+}
+document.querySelector(".blog_card2").onclick = function open() {
+    document.querySelector(".blogpop2").style.left = "0";
+    return false;
+}
+document.querySelector(".blog_card3").onclick = function open() {
+    document.querySelector(".blogpop3").style.left = "0";
+    return false;
+}
+document.querySelector(".blog_card4").onclick = function open() {
+    document.querySelector(".blogpop4").style.left = "0";
+    return false;
+}
+document.querySelector(".blog_card5").onclick = function open() {
+    document.querySelector(".blogpop5").style.left = "0";
     return false;
 }
 $(document).ready(function() {
@@ -177,7 +237,7 @@ $(document).ready(function() {
             },
         ]
     });
-    $('.blogpop_card_slider').slick({
+    $('.blogpop1_card_slider').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -186,8 +246,56 @@ $(document).ready(function() {
         autoplaySpeed: 2000,
         centerMode: true,
         centerPadding: "200px",
-        prevArrow: document.getElementsByClassName('blogpop_card_prev'),
-        nextArrow: document.getElementsByClassName('blogpop_card_next'),
+        prevArrow: document.getElementsByClassName('blogpop1_card_prev'),
+        nextArrow: document.getElementsByClassName('blogpop1_card_next'),
+    });
+    $('.blogpop2_card_slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        centerMode: true,
+        centerPadding: "200px",
+        prevArrow: document.getElementsByClassName('blogpop2_card_prev'),
+        nextArrow: document.getElementsByClassName('blogpop2_card_next'),
+    });
+    $('.blogpop3_card_slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        centerMode: true,
+        centerPadding: "200px",
+        prevArrow: document.getElementsByClassName('blogpop3_card_prev'),
+        nextArrow: document.getElementsByClassName('blogpop3_card_next'),
+    });
+    $('.blogpop4_card_slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        centerMode: true,
+        centerPadding: "200px",
+        prevArrow: document.getElementsByClassName('blogpop4_card_prev'),
+        nextArrow: document.getElementsByClassName('blogpop4_card_next'),
+    });
+    $('.blogpop5_card_slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        centerMode: true,
+        centerPadding: "200px",
+        prevArrow: document.getElementsByClassName('blogpop5_card_prev'),
+        nextArrow: document.getElementsByClassName('blogpop5_card_next'),
     });
 
 });

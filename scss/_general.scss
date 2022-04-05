@@ -1192,8 +1192,9 @@
                 font-weight: 800;
                 font-size: 40px;
                 color: #3D3D30;
-                left: 271px;
                 top: calc(50% - 88px/2 + 190px);
+                width: 100%;
+                text-align: center;
             }
             &_text {
                 position: absolute;

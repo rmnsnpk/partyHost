@@ -17,26 +17,35 @@
     <header class="menu">
         <div class="container">
             <div class="row">
-                <img src="./img/logo.png" alt="logo" class="menu_logo">
-                <nav>
-                    <ul class="menu_list">
-                        <li><a href="#" class="menu_list_item menu_list_item_first">Этапы работы</a></li>
-                        <li><a href="#" class="menu_list_item">Блог</a></li>
-                        <li><a href="#" class="menu_list_item">Цены</a></li>
-                        <li><a href="#" class="menu_list_item">Отзывы</a></li>
-                        <li><a href="#" class="menu_list_item menu_list_item_last">Контакты</a></li>
-                    </ul>
-                </nav>
-                <div class="menu_connect">
-                    <div>
-                        <a href="tel:+375292900600" class="menu_connect_number">+375(29)2-900-600</a>
-                        <br>
-                        <img src="./img/tel_small.png" alt="phone" class="menu_connect_img">
-                        <p class="menu_connect_text">Заказать звонок</p>
+                <div class="bg">
+                    <img src="./img/logo.png" alt="logo" class="menu_logo">
+                    <img src="./img/logoDark.png" alt="logo" class="menu_logoDark">
+                    <nav>
+                        <ul class="menu_list">
+                            <li><a href="#" class="menu_list_item menu_list_item_first">Этапы работы</a></li>
+                            <li><a href="#" class="menu_list_item">Блог</a></li>
+                            <li><a href="#" class="menu_list_item">Цены</a></li>
+                            <li><a href="#" class="menu_list_item">Отзывы</a></li>
+                            <li><a href="#" class="menu_list_item menu_list_item_last">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="menu_connect">
+                        <div>
+                            <a href="tel:+375292900600" class="menu_connect_number">+375(29)2-900-600</a>
+                            <br>
+                            <img src="./img/tel_small.png" alt="phone" class="menu_connect_img">
+                            <p class="menu_connect_text">Заказать звонок</p>
+                        </div>
+                        <a href="#" class="menu_connect_inst">
+                            <img src="./img/main_inst.png" alt="inst" class="menu_inst_img">
+                        </a>
                     </div>
-                    <a href="#" class="menu_connect_inst">
-                        <img src="./img/main_inst.png" alt="inst" class="menu_inst_img">
-                    </a>
+
+                </div>
+                <div class="menu_hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </div>
@@ -44,14 +53,15 @@
     <section class="main">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-sm-7">
+                    <h1 style="display: none;">Ведущий Минск</h1>
                     <h2 class="main_title">Ваш <span>ведущий</span></h2>
                     <hr>
                     <h2 class="main_name">Стреха<br>Дмитрий</h2>
                     <p class="main_text">Сделаю уникальный сценарий для вашего мероприятия, <br> который понравится всем гостям</p>
                     <button class="main_btn open">Обсудить мероприятие</button>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <img src="./img/photo.png" alt="photo" class="main_img">
                 </div>
             </div>
@@ -60,28 +70,28 @@
     <section class="types">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="types_card">
                         <img src="./img/wedding_card.png" alt="wedding" class="types_card_img">
                         <br>
                         <a href="#choice" class="types_card_text" onclick="choose1()">Свадьбы</a>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="types_card">
                         <img src="./img/bithday.png" alt="bth" class="types_card_img">
                         <br>
                         <a href="#choice" class="types_card_text" onclick="choose3()">Дни Рождения</a>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="types_card">
                         <img src="./img/grad.png" alt="graduate" class="types_card_img">
                         <br>
                         <a href="#choice" class="types_card_text" onclick="choose2()">Выпускные</a>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="types_card">
                         <img src="./img/coorp.png" alt="corporation" class="types_card_img">
                         <br>
@@ -101,7 +111,7 @@
             <div class="stages_arrow stages_arrow4"></div>
             <div class="stages_arrow stages_arrow5"></div>
             <div class="row">
-                <div class="col-md-5 wrap">
+                <div class="col-lg-5 wrap col-md-6">
                     <img src="./img/point1.jpg" alt="point1" class="stages_img">
                     <div class="stages_block">
                         <h3 class="stages_block_title">Личная встреча </h3>
@@ -109,8 +119,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-5 offset-md-2 wrap">
-                    <img src="./img/point2.png" alt="point2" class="stages_img">
+                <div class="col-lg-5 offset-lg-2 col-md-6 wrap">
+                    <img src="./img/point2.png" alt="point2" class="stages_img  right">
                     <div class="stages_block">
                         <h3 class="stages_block_title">Договор</h3>
                         <p class="stages_block_text">Подписываем стандартный договор, чтобы каждая сторона выполняла свои обязательства </p>
@@ -118,15 +128,15 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-5 wrap">
+                <div class="col-lg-5 col-md-6 wrap">
                     <img src="./img/point3.png" alt="point3" class="stages_img">
                     <div class="stages_block">
                         <h3 class="stages_block_title">Анализ мероприятия</h3>
                         <p class="stages_block_text">Происходит на основании ваших пожеланий и предоставленных материалов </p>
                     </div>
                 </div>
-                <div class="col-md-5 offset-md-2 wrap">
-                    <img src="./img/point4.png" alt="point4" class="stages_img">
+                <div class="col-lg-5 offset-lg-2 col-md-6 wrap">
+                    <img src="./img/point4.png" alt="point4" class="stages_img right">
                     <div class="stages_block">
                         <h3 class="stages_block_title">Общая беседа</h3>
                         <p class="stages_block_text">Создается беседа, в которой мы поддерживаем общение и обсуждаем возникающие вопросы </p>
@@ -134,15 +144,15 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-5 wrap">
+                <div class="col-lg-5  col-md-6 wrap">
                     <img src="./img/point5.png" alt="point5" class="stages_img">
                     <div class="stages_block">
                         <h3 class="stages_block_title">План</h3>
                         <p class="stages_block_text">За две недели до мероприятия я отправляю вам подробный план с таймингом </p>
                     </div>
                 </div>
-                <div class="col-md-5 offset-md-2 wrap">
-                    <img src="./img/point6.png" alt="point6" class="stages_img">
+                <div class="col-lg-5 offset-lg-2 col-md-6 wrap">
+                    <img src="./img/point6.png" alt="point6" class="stages_img right">
                     <div class="stages_block">
                         <h3 class="stages_block_title">Ваши довольные отзывы</h3>
                         <p class="stages_block_text">Вы, под огромным впечатлением от того, как всё прошло здорово, пишите мне восторженный отзыв</p>
@@ -154,14 +164,14 @@
     <section class="blog">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 col-12">
                     <div class="blog_card blog_card1">
                         <h2 class="blog_card_type">Свадьба</h2>
                         <p class="blog_card1_text">Свадьба Виктории и Евгения</p>
                         <img src="./img/blog_zoom.png" alt="zoom" class="blog_card1_zoom">
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="blog_card blog_card2">
                         <h2 class="blog_card_type">Корпоратив</h2>
                         <p class="blog_card_text">Галаужин <br>”ООО МФП”</p>
@@ -173,7 +183,7 @@
                         <img src="./img/blog_zoom.png" alt="zoom" class="blog_card_zoom">
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="blog_card blog_card4">
                         <h2 class="blog_card_type">Корпоратив</h2>
                         <p class="blog_card_text">Новогодний корпоратив</p>
@@ -235,7 +245,7 @@
                         <h3 class="choice_block_card_price">$300</h3>
                         <img src="./img/choice_card.png" alt="xz" class="choice_block_card_img">
                         <hr>
-                        <p>Стандартный вариант проведения вашей свадьбы с индивидуальным подходом</p>
+                        <p class="choice_block_card_text">Стандартный вариант проведения вашей свадьбы с индивидуальным подходом</p>
                         <h3 class="choice_block_card_listName">Что входит в пакет </h3>
                         <ul class="choice_block_card_list">
                             <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Индивидуальный сценарий </li>
@@ -290,7 +300,7 @@
                         <h3 class="choice_block_card_price">$250</h3>
                         <img src="./img/choice_card.png" alt="xz" class="choice_block_card_img">
                         <hr>
-                        <p>Стандартный вариант проведения корпаративка компании</p>
+                        <p class="choice_block_card_text">Стандартный вариант проведения корпаративка компании</p>
                         <h3 class="choice_block_card_listName">Что входит в пакет </h3>
                         <ul class="choice_block_card_list">
                             <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Индивидуальный сценарий </li>
@@ -345,7 +355,7 @@
                         <h3 class="choice_block_card_price">$250</h3>
                         <img src="./img/choice_card.png" alt="xz" class="choice_block_card_img">
                         <hr>
-                        <p>Индивидуальный сценарий проведения любово вашего торжества </p>
+                        <p class="choice_block_card_text">Индивидуальный сценарий проведения любово вашего торжества </p>
                         <h3 class="choice_block_card_listName">Что входит в пакет </h3>
                         <ul class="choice_block_card_list">
                             <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Индивидуальный сценарий </li>
@@ -540,6 +550,7 @@
                     <img src="./img/blogpop1_img1.png" alt="photo" class="blogpop_card_slider_img">
                     <img src="./img/blogpop1_img2.png" alt="photo" class="blogpop_card_slider_img">
                     <img src="./img/blogpop1_img3.png" alt="photo" class="blogpop_card_slider_img">
+                    <img src="./img/blogpop1_img4.png" alt="photo" class="blogpop_card_slider_img">
                 </div>
                 <h2 class="blogpop_card_title">Свадьба <br> Виктории и Евгения </h2>
                 <p class="blogpop_card_text">Хочется поделиться с вами замечательной свадьбой Тем более, что это свадьба моего брата Евгения и уже теперешней его жены Виктории!! 🤩 Хочу, чтобы у них появилось вдвое больше тех качеств, которыми должны обладать крепкие семьи!! Люблю
@@ -593,6 +604,7 @@
                     <img src="./img/blogpop4_img1.png" alt="photo" class="blogpop_card_slider_img">
                     <img src="./img/blogpop4_img2.png" alt="photo" class="blogpop_card_slider_img">
                     <img src="./img/blogpop4_img3.png" alt="photo" class="blogpop_card_slider_img">
+                    <img src="./img/blogpop4_img4.png" alt="photo" class="blogpop_card_slider_img">
                 </div>
                 <h2 class="blogpop_card_title">Новогдний корпоратив</h2>
                 <p class="blogpop_card_text">Новогодние праздники проходят быстрее, чем хотелось бы🧐.. Надеюсь все успели поздравить, обнять и поцеловать своих близких и родных!! Ещё раз хочу пожелать Всем тепла, внимания, понимания и ласки, и конечно же верьте в чудо и будьте чудом!!</p>
@@ -600,7 +612,6 @@
                 <img src="./img/prev_arrow.png" alt="prev" class="blogpop4_card_prev blogpop_card_prev">
                 <img src="./img/next_arrow.png" alt="next" class="blogpop4_card_next blogpop_card_next">
             </div>
-
         </div>
     </section>
     <section class="blogpop blogpop5">
@@ -610,15 +621,15 @@
                     <img src="./img/blogpop5_img1.png" alt="photo" class="blogpop_card_slider_img">
                     <img src="./img/blogpop5_img2.png" alt="photo" class="blogpop_card_slider_img">
                     <img src="./img/blogpop5_img3.png" alt="photo" class="blogpop_card_slider_img">
+                    <img src="./img/blogpop5_img4.png" alt="photo" class="blogpop_card_slider_img">
                 </div>
                 <h2 class="blogpop_card_title">Юбилей <br> Екатерины Олеговны</h2>
-                <p class="blogpop_card_text">Поздравляю с такой замечательным красивым юбилеем, 50 лет-это гордость, это мудрость и опыт. Желаю, чтобы силы, бодрость духа и здоровье всегда шагали в ногу с вами. Пусть улыбки родных согревают и оберегают вас.
+                <p class="blogpop_card_text">Поздравляю с таким замечательным красивым юбилеем, 50 лет-это гордость, это мудрость и опыт. Желаю, чтобы силы, бодрость духа и здоровье всегда шагали в ногу с вами. Пусть улыбки родных согревают и оберегают вас.
                 </p>
                 <img src="./img/close_pop.png" alt="close" class="blogpop_card_close blogpop5_card_close">
                 <img src="./img/prev_arrow.png" alt="prev" class="blogpop5_card_prev blogpop_card_prev">
                 <img src="./img/next_arrow.png" alt="next" class="blogpop5_card_next blogpop_card_next">
             </div>
-
         </div>
     </section>
 

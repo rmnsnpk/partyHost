@@ -1,0 +1,988 @@
+@media( max-width: 1200px) {
+    .menu {
+        &_logo {
+            width: 180px;
+            margin-right: 30px;
+        }
+        &_list {
+            li {
+                margin-right: 20px;
+                transition: 0.3s;
+            }
+            &_item {
+                text-decoration: none;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                color: $White;
+            }
+            .menu_list_item_last {
+                margin-left: 140px;
+            }
+            .last {
+                margin-left: 0;
+            }
+            .first {
+                margin-left: 140px;
+            }
+        }
+        &_connect {
+            &_number {
+                font-size: 15px;
+                letter-spacing: 0px;
+            }
+            &_img {
+                margin-right: 6px;
+            }
+            &_text {
+                font-size: 12px;
+            }
+        }
+    }
+    .main {
+        &_title {
+            margin-top: 180px;
+            font-size: 34px;
+        }
+        &_img {
+            margin-left: -190px;
+        }
+        hr {
+            width: 140px;
+        }
+    }
+    .types {
+        &_card {
+            width: 100%;
+            text-align: center;
+            &_text {
+                font-size: 22px;
+            }
+            &_button {
+                width: 160px;
+                left: 28px;
+            }
+        }
+    }
+    .stages {
+        &_block {
+            &_title {
+                font-size: 23px;
+            }
+        }
+        &_arrow1 {
+            left: 331px;
+            top: 190px;
+        }
+        &_arrow2 {
+            left: 730px;
+            top: 276.5px;
+        }
+        &_arrow3 {
+            left: 346.95px;
+            top: 414.5px;
+        }
+        &_arrow4 {
+            left: 221.91px;
+            top: 495.9px;
+        }
+        &_arrow5 {
+            left: 378.96px;
+            top: 704.57px;
+        }
+    }
+    .blog {
+        height: auto;
+        &_card {
+            width: 200px;
+            height: 220px;
+            margin-bottom: 50px;
+            &_text {
+                font-size: 19px;
+                margin-top: 100px;
+            }
+        }
+        &_card1 {
+            width: 450px;
+            height: 490px;
+            &_text {
+                margin-top: 290px;
+                font-size: 34px;
+            }
+            &_zoom {
+                left: 201px;
+                top: 222px;
+            }
+        }
+    }
+    .inst {
+        &_title {
+            font-size: 32px;
+        }
+        &_link {
+            font-size: 32px;
+            margin-left: 200px;
+            &_img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        &_line {
+            left: 640px;
+            width: 245px;
+        }
+    }
+    .choice {
+        height: 1377px;
+        &_titleBack {
+            left: 412px;
+        }
+        &_block {
+            &_card {
+                width: 285px;
+                padding-left: 15px;
+                &_img {
+                    left: 200px;
+                }
+                &_text {
+                    font-size: 13px !important;
+                }
+                hr {
+                    width: 265px;
+                }
+                &_list {
+                    margin-top: 10px;
+                    &_item {
+                        font-size: 14px;
+                        margin-bottom: 13px;
+                        &_type {
+                            width: 18px;
+                            height: 20px;
+                        }
+                    }
+                }
+                &_button {
+                    width: 240px;
+                }
+            }
+        }
+        &_slider {
+            width: 100%;
+            &_item {
+                &_card {
+                    width: 283px;
+                    height: 307px;
+                    top: 100px;
+                    &_logo {
+                        width: 100px;
+                        height: 26px;
+                    }
+                    &_mark {
+                        width: 72px;
+                        height: 12px;
+                    }
+                    &_text {
+                        font-size: 13px;
+                    }
+                    &_photo {
+                        left: 33px;
+                        top: 250px;
+                    }
+                    &_visitor {
+                        top: 250px;
+                    }
+                }
+                &_img {
+                    width: 669px;
+                    height: 491px;
+                }
+            }
+        }
+        &_prev {
+            top: 432px;
+        }
+        &_next {
+            top: 432px;
+        }
+    }
+    .contact {
+        &_form {
+            &_input {
+                width: 28%;
+            }
+        }
+    }
+    .footer {
+        &_contact {
+            &_tel {
+                &_num {
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                }
+            }
+            &_mail {
+                &_num {
+                    font-size: 16px;
+                }
+            }
+            &_text {
+                margin-left: 0px;
+                font-size: 20px;
+                margin-top: 65px;
+            }
+        }
+    }
+}
+
+@media( max-width: 992px) {
+    .menu {
+        &_logo {
+            width: 120px;
+            margin-right: 10px;
+            height: 29px;
+            margin-top: 10px;
+        }
+        &_list {
+            li {
+                margin-right: 15px;
+                transition: 0.3s;
+            }
+            &_item {
+                text-decoration: none;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                color: $White;
+            }
+            .menu_list_item_last {
+                margin-left: 80px;
+            }
+            .last {
+                margin-left: 0;
+            }
+            .first {
+                margin-left: 80px;
+            }
+        }
+        &_connect {
+            &_number {
+                font-size: 13px;
+                letter-spacing: 0px;
+            }
+            &_img {
+                margin-right: 0px;
+            }
+            &_text {
+                font-size: 10px;
+            }
+            &_inst {
+                width: 20px;
+            }
+        }
+    }
+    .main {
+        max-height: 550px;
+        &_title {
+            margin-top: 120px;
+            font-size: 28px;
+        }
+        &_name {
+            font-size: 60px;
+        }
+        &_img {
+            margin-left: -153px;
+            width: 393px;
+        }
+        hr {
+            width: 116px;
+            margin-left: 65px;
+        }
+        &_text {
+            font-size: 12px;
+        }
+    }
+    .types {
+        height: 220px;
+        &_card {
+            width: 100%;
+            text-align: center;
+            height: 140px;
+            &_img {
+                width: 55px;
+                height: 55px;
+                margin-bottom: 20px;
+            }
+            &_text {
+                font-size: 18px;
+            }
+            &_button {
+                width: 130px;
+                top: 90px;
+                left: 10px;
+                height: 40px;
+                font-size: 14px;
+                padding-top: 8px;
+            }
+        }
+    }
+    .stages {
+        &_block {
+            &_title {
+                font-size: 20px;
+            }
+            &_text {
+                font-size: 14px;
+            }
+        }
+        &_arrow1 {
+            left: 250px;
+            top: 120px;
+            transform: scale(0.8);
+        }
+        &_arrow2 {
+            left: 420px;
+            top: 236.5px;
+            transform: scale(0.8);
+        }
+        &_arrow3 {
+            left: 185.95px;
+            top: 364.5px;
+            transform: scale(0.6);
+        }
+        &_arrow4 {
+            left: 181.91px;
+            top: 385.9px;
+            transform: scale(0.8);
+        }
+        &_arrow5 {
+            left: 173.95999999999998px;
+            top: 567.57px;
+            transform: scale(0.8);
+        }
+    }
+    .blog {
+        height: auto;
+        &_card {
+            width: 100%;
+            height: 170px;
+            margin-bottom: 30px;
+            padding: 9px 0 0 9px;
+            &_text {
+                font-size: 14px;
+                margin-top: 70px;
+            }
+            &_type {
+                font-size: 10px;
+                padding: 8px 15px;
+            }
+        }
+        &_card1 {
+            width: 100%;
+            height: 360px;
+            padding: 15px 0 0 15px;
+            &_text {
+                margin-top: 200px;
+                font-size: 27px !important;
+            }
+            &_zoom {
+                left: 201px;
+                top: 222px;
+            }
+        }
+    }
+    .inst {
+        height: 260px;
+        &_title {
+            font-size: 27px;
+        }
+        &_link {
+            font-size: 25px;
+            margin-left: 88px;
+            &_img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        &_line {
+            top: 35px;
+            left: 460px;
+            width: 193px;
+        }
+        &_photos {
+            &_img {
+                width: 130px;
+                height: 130px;
+            }
+        }
+    }
+    .choice {
+        height: auto;
+        &_title {
+            font-size: 35px;
+        }
+        &_titleBack {
+            font-size: 40px;
+            top: 3px;
+            left: 300px;
+        }
+        &_block {
+            &_card {
+                width: 200px;
+                padding: 12px 0 0 8px;
+                height: 360px;
+                margin-top: 120px;
+                &_img {
+                    left: 120px;
+                    top: 20px;
+                    width: 55px;
+                }
+                &_price {
+                    font-size: 30px;
+                    margin-top: 7px;
+                }
+                &_text {
+                    font-size: 13px !important;
+                    margin-top: 10px;
+                    font-size: 8px;
+                }
+                hr {
+                    width: 160px;
+                }
+                &_listName {
+                    font-size: 14px;
+                    margin-top: 10px;
+                }
+                &_list {
+                    margin-top: 5px;
+                    height: 90px;
+                    &_item {
+                        font-size: 9px;
+                        margin-bottom: 13px;
+                        &_type {
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+                }
+                &_button {
+                    top: 300px;
+                    width: 170px;
+                    height: 50px;
+                }
+                &_big {
+                    height: 455px;
+                    margin-top: 25px;
+                }
+            }
+        }
+        &_slider {
+            width: 100%;
+            &_item {
+                &_card {
+                    width: 205px;
+                    height: 225px;
+                    top: 65px;
+                    padding: 20px 15px 20px 20px;
+                    left: 90px;
+                    &_logo {
+                        width: 80px;
+                        height: 20px;
+                        margin-right: 10px;
+                    }
+                    &_mark {
+                        width: 65px;
+                        height: 10px;
+                    }
+                    &_text {
+                        font-size: 9px;
+                    }
+                    &_photo {
+                        left: 20px;
+                        top: 180px;
+                        width: 40px;
+                        height: 40px;
+                    }
+                    &_visitor {
+                        top: 183px;
+                        left: 70px;
+                        &_name {
+                            font-size: 12px;
+                        }
+                        &_status {
+                            font-size: 10px;
+                            margin-top: 0;
+                        }
+                    }
+                }
+                &_img {
+                    width: 480px;
+                    height: 333px;
+                    margin-left: 180px;
+                }
+            }
+        }
+        &_prev {
+            top: 300px;
+            width: 35px;
+            left: 100px;
+        }
+        &_next {
+            top: 300px;
+            width: 35px;
+            left: 140px;
+        }
+    }
+    .contact {
+        &_title {
+            font-size: 45px;
+        }
+        &_titleBack {
+            font-size: 50px;
+            left: 245px;
+            top: 25px;
+        }
+        &_form {
+            &_input {
+                width: 25%;
+            }
+        }
+    }
+    .footer {
+        &_contact {
+            &_tel {
+                margin-left: 0;
+                &_name {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    margin-bottom: 3px;
+                }
+                &_num {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 15px;
+                    margin-bottom: 25px;
+                }
+                &_img {
+                    margin-bottom: 13px;
+                }
+                &_line {
+                    width: 100%;
+                    border: 1px solid #DB3130;
+                    border-radius: 5px;
+                    background-color: $Red;
+                }
+            }
+            &_mail {
+                display: inline-block;
+                width: 230px;
+                text-align: center;
+                color: $White;
+                margin-left: 125px;
+                &_name {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    margin-bottom: 3px;
+                }
+                &_num {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    margin-bottom: 18px;
+                }
+                &_img {
+                    margin-bottom: 18px;
+                    margin-top: 8px;
+                }
+                &_line {
+                    width: 100%;
+                    border: 1px solid #DB3130;
+                    border-radius: 5px;
+                    background-color: $Red;
+                }
+            }
+            &_text {
+                display: inline-block;
+                width: 335px;
+                margin-left: 0px;
+                font-size: 16px;
+                margin-top: 65px;
+            }
+        }
+    }
+}
+
+@media( max-width: 768px) {
+    .menu {
+        width: 100%;
+        max-height: 0;
+        min-height: 100vh;
+        background: rgba(31, 30, 29, 0.58);
+        position: fixed;
+        right: -100%;
+        padding: 0;
+        text-align: right;
+        .container {
+            position: static;
+        }
+        .menu_list_item_last {
+            margin-left: 0px;
+            margin-right: 0;
+        }
+        .last {
+            margin-left: 0px;
+            margin-right: 0;
+        }
+        .first {
+            margin-left: 0px;
+        }
+        &_active {
+            right: 0;
+        }
+        .bg {
+            position: absolute;
+            width: 266px;
+            height: 120vh;
+            left: auto;
+            right: 0% !important;
+            top: 0px;
+            background: url("../img/menu_bg_small.jpg");
+            display: block;
+            text-align: left;
+        }
+        &_logo {
+            display: none;
+        }
+        &_logoDark {
+            display: inline-block;
+            margin: 23px 0 0 8px;
+            width: 162px;
+            height: 40px;
+        }
+        &_list {
+            flex-direction: column;
+            a {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                color: #000;
+                margin-bottom: 36px;
+                margin-top: 0;
+            }
+            li {
+                margin-right: 80px;
+            }
+        }
+        &_connect {
+            display: block;
+            margin-left: 24px;
+            &_number {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                color: #1F1C16;
+                letter-spacing: normal;
+            }
+            &_text {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                color: #1F1C16;
+                letter-spacing: normal;
+            }
+            &_inst {
+                margin: 22px 0 0 56px;
+            }
+        }
+        &_hamburger {
+            display: block;
+            position: fixed;
+            width: 31px;
+            height: 16px;
+            z-index: 5;
+            right: 16px;
+            top: 35px;
+            text-align: center;
+            span {
+                display: block;
+                z-index: 6;
+                width: 31px;
+                height: 2px;
+                margin-bottom: 8px;
+                background-color: $Red;
+                border-radius: 5px;
+                transition: 0.5s all;
+            }
+            &_active {
+                span {
+                    margin-bottom: -2px;
+                    &:nth-child(1) {
+                        transform: translateY(6px) rotate(-45deg);
+                    }
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                    &:nth-child(3) {
+                        transform: translateY(6px) rotate(45deg);
+                    }
+                }
+            }
+        }
+    }
+    .main {
+        position: relative;
+        height: 510px;
+        .col-sm-7 {
+            z-index: 5;
+        }
+        &_title {
+            margin-top: 100px;
+        }
+        &_text {
+            font-size: 10px;
+        }
+        &_btn {
+            z-index: 3;
+        }
+        &_img {
+            position: absolute;
+            margin-top: -409px;
+            margin-left: 200px;
+            width: 350px;
+            height: 461px;
+            z-index: 1;
+        }
+    }
+    .types {
+        height: inherit;
+        &_card {
+            margin-bottom: 25px;
+            filter: drop-shadow(0px 9px 55px rgba(31, 30, 29, 0.37));
+            &_button {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    .stages {
+        padding-left: 50px;
+        .right {
+            position: absolute;
+            left: 363px;
+        }
+        .wrap {
+            margin-top: 39px;
+        }
+        &_arrow1 {
+            background: url("../img/arrow_small1.png") center center/cover no-repeat;
+            width: 217.08px;
+            height: 72.5px;
+            transform: scaleX(1.2);
+            left: 151px;
+            top: 182px;
+        }
+        &_arrow2 {
+            background: url("../img/arrow_small2.png") center center/cover no-repeat;
+            width: 224.5px;
+            height: 54.36px;
+            left: 157px;
+            top: 319.5px;
+        }
+        &_arrow3 {
+            background: url("../img/arrow_small3.png") center center/cover no-repeat;
+            width: 36.35px;
+            height: 52.15px;
+            transform: scaleY(1.5);
+            top: 450px;
+        }
+        &_arrow4 {
+            background: url("../img/arrow_small4.png") center center/cover no-repeat;
+            width: 188.12px;
+            height: 50.16px;
+            left: 181.91px;
+            top: 692.9px;
+        }
+        &_arrow5 {
+            background: url("../img/arrow_small5.png") center center/cover no-repeat;
+            width: 51.39px;
+            height: 66.63px;
+        }
+    }
+    .blog {
+        &_card {
+            height: 236px;
+            &_button {
+                width: 0;
+            }
+            &_zoom {
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+            &_text {
+                font-size: 22px;
+                margin-top: 118px;
+            }
+        }
+        &_card1 {
+            height: 565px;
+            &_zoom {
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+            &_text {
+                font-size: 40px !important;
+                margin-top: 377px;
+            }
+        }
+    }
+    .inst {
+        padding-top: 20px;
+        height: 205px;
+        &_title {
+            font-size: 22px;
+        }
+        &_link {
+            font-size: 20px;
+            margin-left: 16px;
+            &_img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        &_line {
+            top: 24px;
+            left: 322px;
+            width: 156px;
+        }
+        &_photos {
+            &_img {
+                width: 95px;
+                height: 95px;
+            }
+        }
+    }
+    .choice {
+        &_block {
+            &_card {
+                width: 350px;
+                height: 552px;
+                margin: 40px 40px;
+                padding: 24px 15px 0 25px;
+                &_title {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+                &_price {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 38px;
+                    margin-top: 11px;
+                }
+                hr {
+                    width: 303.73px;
+                    height: 1px;
+                    background-color: #F8F1EB;
+                    border: none;
+                }
+                &_img {
+                    position: absolute;
+                    left: 80%;
+                    top: 24px;
+                }
+                &_text {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px !important;
+                    margin-top: 18px;
+                }
+                &_listName {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    margin-top: 20px;
+                }
+                &_list {
+                    list-style-type: none;
+                    height: 140px;
+                    overflow: hidden;
+                    &_item {
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 16px;
+                        margin-bottom: 12px;
+                        &_type {
+                            margin-left: -40px;
+                            margin-right: 12px;
+                            width: 20px;
+                            height: 23px;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+            .my-dots {
+                position: absolute;
+                bottom: -45px;
+                display: block;
+                width: 100%;
+                padding: 0;
+                list-style: none;
+                text-align: center;
+            }
+            .my-dots li {
+                position: relative;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin: 0 5px;
+                padding: 0;
+                cursor: pointer;
+            }
+            .my-dots li button {
+                font-size: 0;
+                line-height: 0;
+                display: block;
+                width: 20px;
+                height: 20px;
+                padding: 5px;
+                cursor: pointer;
+                color: transparent;
+                border: 0;
+                outline: none;
+                background: transparent;
+            }
+            .my-dots li button:hover,
+            .my-dots li button:focus {
+                outline: none;
+            }
+            .my-dots li button:hover:before,
+            .my-dots li button:focus:before {
+                opacity: 1;
+            }
+            .my-dots li button:before {
+                font-family: 'slick';
+                font-size: 6px;
+                line-height: 20px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 20px;
+                height: 20px;
+                content: url('../img/dot.svg');
+                text-align: center;
+                opacity: .25;
+                color: $Red;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            .my-dots li.slick-active button:before {
+                opacity: .75;
+                color: $Red;
+            }
+        }
+    }
+}

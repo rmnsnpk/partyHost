@@ -17,7 +17,25 @@ block.forEach((block) => {
 })
 
 
-
+window.addEventListener('DOMContentLoaded', () => {
+    const menu = document.querySelector('.menu'),
+        hamburger = document.querySelector('.menu_hamburger'),
+        menuItem = document.querySelectorAll('.menu_list_item');
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('menu_hamburger_active');
+        menu.classList.toggle('menu_active');
+    });
+    document.querySelector('.menu_connect').addEventListener('click', () => {
+        hamburger.classList.toggle('menu_hamburger_active');
+        menu.classList.toggle('menu_active');
+    })
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            hamburger.classList.toggle('menu_hamburger_active');
+            menu.classList.toggle('menu_active');
+        })
+    })
+})
 
 
 
@@ -94,7 +112,7 @@ document.querySelectorAll(".open").forEach((elem) => {
     }
 })
 document.querySelector(".toDialog_card_close").onclick = function close() {
-    document.querySelector(".toDialog").style.left = "100vw";
+    document.querySelector(".toDialog").style.left = "1000vw";
     return false;
 }
 
@@ -129,64 +147,64 @@ cards.forEach((card, index) => {
 $(document).mouseup(function(e) {
     var container = $(".blogpop1_card");
     if (container.has(e.target).length === 0) {
-        document.querySelector(".blogpop1").style.left = "100vw";
+        document.querySelector(".blogpop1").style.left = "1000vw";
         return false;
     }
 });
 $(document).mouseup(function(e) {
     var container = $(".blogpop2_card");
     if (container.has(e.target).length === 0) {
-        document.querySelector(".blogpop2").style.left = "100vw";
+        document.querySelector(".blogpop2").style.left = "1000vw";
         return false;
     }
 });
 $(document).mouseup(function(e) {
     var container = $(".blogpop3_card");
     if (container.has(e.target).length === 0) {
-        document.querySelector(".blogpop3").style.left = "100vw";
+        document.querySelector(".blogpop3").style.left = "1000vw";
         return false;
     }
 });
 $(document).mouseup(function(e) {
     var container = $(".blogpop4_card");
     if (container.has(e.target).length === 0) {
-        document.querySelector(".blogpop4").style.left = "100vw";
+        document.querySelector(".blogpop4").style.left = "1000vw";
         return false;
     }
 });
 $(document).mouseup(function(e) {
     var container = $(".blogpop5_card");
     if (container.has(e.target).length === 0) {
-        document.querySelector(".blogpop5").style.left = "100vw";
+        document.querySelector(".blogpop5").style.left = "1000vw";
         return false;
     }
 });
 $(document).mouseup(function(e) {
     var container = $(".toDialog_item");
     if (container.has(e.target).length === 0) {
-        document.querySelector(".toDialog").style.left = "100vw";
+        document.querySelector(".toDialog").style.left = "1000vw";
         return false;
     }
 });
 
 document.querySelector(".blogpop1_card_close").onclick = function close() {
-    document.querySelector(".blogpop1").style.left = "100vw";
+    document.querySelector(".blogpop1").style.left = "1000vw";
     return false;
 }
 document.querySelector(".blogpop2_card_close").onclick = function close() {
-    document.querySelector(".blogpop2").style.left = "100vw";
+    document.querySelector(".blogpop2").style.left = "1000vw";
     return false;
 }
 document.querySelector(".blogpop3_card_close").onclick = function close() {
-    document.querySelector(".blogpop3").style.left = "100vw";
+    document.querySelector(".blogpop3").style.left = "1000vw";
     return false;
 }
 document.querySelector(".blogpop4_card_close").onclick = function close() {
-    document.querySelector(".blogpop4").style.left = "100vw";
+    document.querySelector(".blogpop4").style.left = "1000vw";
     return false;
 }
 document.querySelector(".blogpop5_card_close").onclick = function close() {
-    document.querySelector(".blogpop5").style.left = "100vw";
+    document.querySelector(".blogpop5").style.left = "1000vw";
     return false;
 }
 document.querySelector(".blog_card1").onclick = function open() {
@@ -222,9 +240,9 @@ $(document).ready(function() {
         responsive: [{
                 breakpoint: 1200,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
-                    arrows: false
+                    arrows: true
                 }
             },
             {
@@ -238,7 +256,7 @@ $(document).ready(function() {
         ]
     });
     $('.blogpop1_card_slider').slick({
-        infinite: true,
+        infinite: false,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
@@ -250,7 +268,7 @@ $(document).ready(function() {
         nextArrow: document.getElementsByClassName('blogpop1_card_next'),
     });
     $('.blogpop2_card_slider').slick({
-        infinite: true,
+        infinite: false,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
@@ -262,7 +280,7 @@ $(document).ready(function() {
         nextArrow: document.getElementsByClassName('blogpop2_card_next'),
     });
     $('.blogpop3_card_slider').slick({
-        infinite: true,
+        infinite: false,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
@@ -274,7 +292,7 @@ $(document).ready(function() {
         nextArrow: document.getElementsByClassName('blogpop3_card_next'),
     });
     $('.blogpop4_card_slider').slick({
-        infinite: true,
+        infinite: false,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
@@ -286,7 +304,7 @@ $(document).ready(function() {
         nextArrow: document.getElementsByClassName('blogpop4_card_next'),
     });
     $('.blogpop5_card_slider').slick({
-        infinite: true,
+        infinite: false,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
@@ -297,5 +315,51 @@ $(document).ready(function() {
         prevArrow: document.getElementsByClassName('blogpop5_card_prev'),
         nextArrow: document.getElementsByClassName('blogpop5_card_next'),
     });
+    $('.choice_wedding').slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        mobileFirst: true,
+        dots: true,
+        dotsClass: 'my-dots',
+        responsive: [{
+            breakpoint: 767,
+            settings: 'unslick'
+        }]
+    });
+    $('.choice_bth').slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        mobileFirst: true,
+        dots: true,
+        dotsClass: 'my-dots',
+        responsive: [{
+            breakpoint: 767,
+            settings: 'unslick'
+        }]
+    });
+    $('.choice_corp').slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        mobileFirst: true,
+        dots: true,
+        dotsClass: 'my-dots',
+        responsive: [{
+            breakpoint: 767,
+            settings: 'unslick'
+        }]
+    });
+
 
 });

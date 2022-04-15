@@ -255,6 +255,7 @@ $(document).ready(function() {
             },
         ]
     });
+
     $('.blogpop1_card_slider').slick({
         infinite: false,
         slidesToShow: 1,

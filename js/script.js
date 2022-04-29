@@ -1,3 +1,234 @@
+
+
+let humb = document.querySelector('#hamburger__nav');
+
+
+function toggleHumb() {
+    if(humb.classList.contains('active__humb')){
+        humb.classList.remove('active__humb')
+        humb.style.right = "-1000vh";
+    } else {
+        humb.classList.add('active__humb');
+        humb.style.right = '0';
+    }
+}
+
+let sliderItemSelected = 2;
+let sliderItemSelected2 = 2;
+let sliderItemSelected3 = 2;
+
+function left() {
+    sliderItemSelected--;
+    showSlides(sliderItemSelected);
+}
+
+function right() {
+    sliderItemSelected++;
+    showSlides(sliderItemSelected);
+}
+
+function left2() {
+    sliderItemSelected2--;
+    showSlides2(sliderItemSelected2);
+}
+
+function right2() {
+    sliderItemSelected2++;
+    showSlides2(sliderItemSelected2);
+}
+
+function left3() {
+    sliderItemSelected3--;
+    showSlides3(sliderItemSelected3);
+}
+
+function right3() {
+    sliderItemSelected3++;
+    showSlides3(sliderItemSelected3);
+
+}
+
+
+
+function currentSlide(n) {
+    sliderItemSelected = n;
+    console.log(sliderItemSelected);
+    showSlides(sliderItemSelected);
+}
+function currentSlide2(n) {
+    sliderItemSelected2 = n;
+    console.log(sliderItemSelected2);
+    showSlides2(sliderItemSelected2);
+}
+function currentSlide3(n) {
+    sliderItemSelected3 = n;
+    console.log(sliderItemSelected3);
+    showSlides3(sliderItemSelected3);
+}
+
+function showSlides(n = 2) {
+    let slides = document.querySelectorAll(".item");
+    let dots = document.querySelectorAll(".slider-dots_item");
+    if(n < 0){
+        n = 3;
+    }
+    if(n > 3){
+        n = 1;
+    }
+    sliderItemSelected = n;
+    slides.forEach(item => item.style.display = "none")
+    dots.forEach(item => item.classList.remove('active__slide'))
+    slides[n-1].style.display = "block";
+    dots[n-1].classList.add("active__slide")
+}
+
+// -------------------------2 ---------------------
+
+function showSlides2(n = 2) {
+    let slides2 = document.querySelectorAll(".item-2");
+    let dots2 = document.querySelectorAll(".slider-dots_item-2");
+    if(n < 0){
+        n = 3;
+    }
+    if(n > 3){
+        n = 1;
+    }
+    sliderItemSelected2 = n;
+    slides2.forEach(item => item.style.display = "none")
+    dots2.forEach(item => item.classList.remove('active__slide'))
+    slides2[n-1].style.display = "block";
+    dots2[n-1].classList.add("active__slide")
+}
+
+// -------------------------3 ---------------------
+
+function showSlides3(n = 2) {
+    let slides2 = document.querySelectorAll(".item-3");
+    let dots2 = document.querySelectorAll(".slider-dots_item-3");
+    if(n < 0){
+        n = 3;
+    }
+    if(n > 3){
+        n = 1;
+    }
+    sliderItemSelected3 = n;
+    slides2.forEach(item => item.style.display = "none")
+    dots2.forEach(item => item.classList.remove('active__slide'))
+    slides2[n-1].style.display = "block";
+    dots2[n-1].classList.add("active__slide")
+}
+
+//-------------------swipe---------
+let item1 = document.querySelectorAll('.slider');
+// let item2 = document.querySelectorAll(`.item-2`);
+// let item3 = document.querySelectorAll(`.item-3`);
+
+
+
+// Вешаем на прикосновение функцию handleTouchStart
+function swipe(params, funcLeft, funcRight) {
+    params.addEventListener('touchstart', handleTouchStart, false);    
+    params.addEventListener('touchmove', handleTouchMove, false);
+
+    var xDown = null;                                                        
+    var yDown = null;                                                                                                                                                                        
+
+    function handleTouchStart(evt) {                                         
+        xDown = evt.touches[0].clientX;                                      
+        yDown = evt.touches[0].clientY;                                      
+    };                                              
+
+    function handleTouchMove(evt) {
+        if ( ! xDown || ! yDown ) {
+            return;
+        }
+    
+        var xUp = evt.touches[0].clientX;                                    
+        var yUp = evt.touches[0].clientY;
+    
+        var xDiff = xDown - xUp;
+        var yDiff = yDown - yUp;
+        // немного поясню здесь. Тут берутся модули движения по оси абсцисс и ординат (почему модули? потому что если движение сделано влево или вниз, то его показатель будет отрицательным) и сравнивается, чего было больше: движения по абсциссам или ординатам. Нужно это для того, чтобы, если пользователь провел вправо, но немного наискосок вниз, сработал именно коллбэк для движения вправо, а ни как-то иначе.
+        if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+            if ( xDiff > 0 ) {
+                funcRight(); 
+ 
+            } else {
+                funcLeft(); 
+
+            }                       
+        } else { // Это вам, в общем-то, не надо, вы ведь только влево-вправо собираетесь двигать
+            if ( yDiff > 0 ) {
+                
+            } else { 
+                /* down swipe */
+            }                                                                 
+        }
+        /* reset values */
+        xDown = null;
+        yDown = null;                                             
+    };
+}
+
+swipe(item1[0], left, right);
+swipe(item1[1], left2, right2);
+swipe(item1[2], left3, right3);
+
+
+
+
+
+// --------choiceSlider
+
+
+function currentSlideChoice(n) {
+    showSlidesChoice(n);
+}
+
+
+function showSlidesChoice(n = 2) {
+    let slides = document.querySelectorAll(".item-choice");
+    let dots = document.querySelectorAll(".slider-dots_item-choice");
+    slides.forEach(item => item.style.display = "none")
+    dots.forEach(item => item.classList.remove('active__slide'))
+    slides[n-1].style.display = "block";
+    dots[n-1].classList.add("active__slide")
+}
+showSlides();
+showSlides2();
+showSlides3();
+showSlidesChoice();
+
+
+
+let slideIndex = 0;
+reviewSlider()
+
+
+function nextSlide() {
+    slideIndex ++;
+    reviewSlider();
+}
+function prevSlide() {
+    slideIndex --;
+    reviewSlider();
+}
+
+
+function reviewSlider(){
+    let slides = document.querySelectorAll(".item-review");
+    if(slideIndex > slides.length-1){
+        slideIndex = 0
+    }
+    if(slideIndex < 0){
+        slideIndex = slides.length-1;
+    }
+    slides.forEach(item => item.style.display = "none")
+    slides[slideIndex].style.display = "block";
+    
+
+}
+
 let block = document.querySelectorAll(".choice_block");
 
 block.forEach((block) => {
@@ -264,6 +495,7 @@ $(document).ready(function() {
         autoplay: true,
         autoplaySpeed: 2000,
         centerMode: true,
+        dots: true,
         centerPadding: "200px",
         prevArrow: document.getElementsByClassName('blogpop1_card_prev'),
         nextArrow: document.getElementsByClassName('blogpop1_card_next'),
@@ -276,6 +508,7 @@ $(document).ready(function() {
         autoplay: true,
         autoplaySpeed: 2000,
         centerMode: true,
+        dots: true,
         centerPadding: "200px",
         prevArrow: document.getElementsByClassName('blogpop2_card_prev'),
         nextArrow: document.getElementsByClassName('blogpop2_card_next'),
@@ -288,6 +521,7 @@ $(document).ready(function() {
         autoplay: true,
         autoplaySpeed: 2000,
         centerMode: true,
+        dots: true,
         centerPadding: "200px",
         prevArrow: document.getElementsByClassName('blogpop3_card_prev'),
         nextArrow: document.getElementsByClassName('blogpop3_card_next'),
@@ -300,6 +534,7 @@ $(document).ready(function() {
         autoplay: true,
         autoplaySpeed: 2000,
         centerMode: true,
+        dots: true,
         centerPadding: "200px",
         prevArrow: document.getElementsByClassName('blogpop4_card_prev'),
         nextArrow: document.getElementsByClassName('blogpop4_card_next'),
@@ -313,6 +548,7 @@ $(document).ready(function() {
         autoplaySpeed: 2000,
         centerMode: true,
         centerPadding: "200px",
+        dots: true,
         prevArrow: document.getElementsByClassName('blogpop5_card_prev'),
         nextArrow: document.getElementsByClassName('blogpop5_card_next'),
     });
@@ -361,6 +597,7 @@ $(document).ready(function() {
             settings: 'unslick'
         }]
     });
-
-
 });
+
+
+// -------------------------1 ---------------------

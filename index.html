@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./fonts/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    
     <link rel="stylesheet" href="./css/styles.min.css">
 </head>
 
@@ -22,11 +24,11 @@
                     <img src="./img/logoDark.png" alt="logo" class="menu_logoDark">
                     <nav>
                         <ul class="menu_list">
-                            <li><a href="#" class="menu_list_item menu_list_item_first">Этапы работы</a></li>
-                            <li><a href="#" class="menu_list_item">Блог</a></li>
-                            <li><a href="#" class="menu_list_item">Цены</a></li>
-                            <li><a href="#" class="menu_list_item">Отзывы</a></li>
-                            <li><a href="#" class="menu_list_item menu_list_item_last">Контакты</a></li>
+                            <li><a href="#stages" class="menu_list_item menu_list_item_first">Этапы работы</a></li>
+                            <li><a href="#blog" class="menu_list_item">Блог</a></li>
+                            <li><a href="#choice" class="menu_list_item">Цены</a></li>
+                            <li><a href="#review" class="menu_list_item">Отзывы</a></li>
+                            <li><a href="#contact" class="menu_list_item menu_list_item_last">Контакты</a></li>
                         </ul>
                     </nav>
                     <div class="menu_connect">
@@ -42,7 +44,7 @@
                     </div>
 
                 </div>
-                <div class="menu_hamburger">
+                <div class="menu_hamburger" onclick="toggleHumb()">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -51,58 +53,58 @@
         </div>
     </header>
     <section class="main">
-        <div class="container">
+        <div class="container photo__bg">
             <div class="row">
-                <div class="col-sm-7">
+                <div class="col-12 col-sm-7">
                     <h1 style="display: none;">Ведущий Минск</h1>
                     <h2 class="main_title">Ваш <span>ведущий</span></h2>
                     <hr>
                     <h2 class="main_name">Стреха<br>Дмитрий</h2>
-                    <p class="main_text">Сделаю уникальный сценарий для вашего мероприятия, <br> который понравится всем гостям</p>
+                    <p class="main_text">Сделаю уникальный сценарий для вашего мероприятия, <br>который понравится всем гостям</p>
                     <button class="main_btn open">Обсудить мероприятие</button>
                 </div>
-                <div class="col-md-5">
+                <div class="image__wrapper col-12 col-md-5">
                     <img src="./img/photo.png" alt="photo" class="main_img">
                 </div>
             </div>
         </div>
     </section>
     <section class="types">
-        <div class="container">
+        <div class="container card_container">
             <div class="row">
-                <div class="col-md-3 col-6">
+                <div class="types_card_wrapper col-md-3 col-6">
                     <div class="types_card">
                         <img src="./img/wedding_card.png" alt="wedding" class="types_card_img">
                         <br>
-                        <a href="#choice" class="types_card_text" onclick="choose1()">Свадьбы</a>
+                        <a href="#inst" class="types_card_text" onclick="choose1()">Свадьбы</a>
                     </div>
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="types_card_wrapper col-md-3 col-6">
                     <div class="types_card">
                         <img src="./img/bithday.png" alt="bth" class="types_card_img">
                         <br>
-                        <a href="#choice" class="types_card_text" onclick="choose3()">Дни Рождения</a>
+                        <a href="#inst" class="types_card_text" onclick="choose3()">Дни Рождения</a>
                     </div>
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="types_card_wrapper col-md-3 col-6">
                     <div class="types_card">
                         <img src="./img/grad.png" alt="graduate" class="types_card_img">
                         <br>
-                        <a href="#choice" class="types_card_text" onclick="choose2()">Выпускные</a>
+                        <a href="#inst" class="types_card_text" onclick="choose2()">Выпускные</a>
                     </div>
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="types_card_wrapper col-md-3 col-6">
                     <div class="types_card">
                         <img src="./img/coorp.png" alt="corporation" class="types_card_img">
                         <br>
-                        <a href="#choice" class="types_card_text" onclick="choose2()">Корпоратив</a>
+                        <a href="#inst" class="types_card_text" onclick="choose2()">Корпоратив</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section id="stages" class="stages">
-        <div class="container" style="position: relative;">
+        <div class="container stages__wrapper" style="position: relative;">
             <h2 class="stages_titleBack">Этапы работы</h2>
             <h2 class="stages_title">Этапы работы</h2>
             <div class="stages_arrow stages_arrow1"></div>
@@ -127,7 +129,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row stage__mobile_card">
                 <div class="col-lg-5 col-md-6 wrap">
                     <img src="./img/point3.png" alt="point3" class="stages_img">
                     <div class="stages_block">
@@ -143,6 +145,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="row">
                 <div class="col-lg-5  col-md-6 wrap">
                     <img src="./img/point5.png" alt="point5" class="stages_img">
@@ -159,11 +162,66 @@
                     </div>
                 </div>
             </div>
+
+
+            <!-- --------mobile------------- -->
+
+            <div class="row">
+                <div class="wrap__mobile_stage wrap__mobile_stage-1">
+                    <!-- <img src="./img/point1.jpg" alt="point1" class="stages_img"> -->
+                    <div class="stages_block">
+                        <h3 class="stages_block_title">Личная встреча </h3>
+                        <p class="stages_block_text">Встречусь с вами для знакомства, а так же обсуждения будущего мероприятия
+                        </p>
+                    </div>
+                </div>
+                <div class="wrap__mobile_stage wrap__mobile_stage-2">
+                    <!-- <img src="./img/point2.png" alt="point2" class="stages_img  right"> -->
+                    <div class="stages_block">
+                        <h3 class="stages_block_title">Договор</h3>
+                        <p class="stages_block_text">Подписываем стандартный договор, чтобы каждая сторона выполняла свои обязательства </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row stage__mobile_card">
+                <div class="wrap__mobile_stage wrap__mobile_stage-3">
+                    <!-- <img src="./img/point4.png" alt="point4" class="stages_img right"> -->
+                    <div class="stages_block">
+                        <h3 class="stages_block_title">Общая беседа</h3>
+                        <p class="stages_block_text">Создается беседа, в которой мы поддерживаем общение и обсуждаем возникающие вопросы </p>
+                    </div>
+                </div>
+                <div class="wrap__mobile_stage wrap__mobile_stage-4">
+                    <!-- <img src="./img/point3.png" alt="point3" class="stages_img"> -->
+                    <div class="stages_block">
+                        <h3 class="stages_block_title">Анализ мероприятия</h3>
+                        <p class="stages_block_text">Происходит на основании ваших пожеланий и предоставленных материалов </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="row">
+                <div class="wrap__mobile_stage wrap__mobile_stage-5">
+                    <!-- <img src="./img/point5.png" alt="point5" class="stages_img"> -->
+                    <div class="stages_block">
+                        <h3 class="stages_block_title">План</h3>
+                        <p class="stages_block_text">За две недели до мероприятия я отправляю вам подробный план с таймингом </p>
+                    </div>
+                </div>
+                <div class="wrap__mobile_stage wrap__mobile_stage-6">
+                    <!-- <img src="./img/point6.png" alt="point6" class="stages_img right"> -->
+                    <div class="stages_block">
+                        <h3 class="stages_block_title">Ваши довольные отзывы</h3>
+                        <p class="stages_block_text">Вы, под огромным впечатлением от того, как всё прошло здорово, пишите мне восторженный отзыв</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="blog">
+    <section class="blog" id="blog">
         <div class="container">
-            <div class="row">
+            <div class="row blog_row">
                 <div class="col-md-6 col-12">
                     <div class="blog_card blog_card1">
                         <h2 class="blog_card_type">Свадьба</h2>
@@ -198,8 +256,8 @@
             </div>
         </div>
     </section>
-    <section class="inst">
-        <div class="container" style="position: relative;">
+    <section id="inst">
+        <div class="container inst_desct" style="position: relative;">
             <h2 class="inst_title">Посмотрите мой инстаграм</h2>
             <a href="#" class="inst_link">@ dmitry__streha <img src="./img/main_inst.png" alt="inst" class="inst_link_img"></a>
             <div class="inst_photos">
@@ -211,10 +269,27 @@
             </div>
             <hr class="inst_line">
         </div>
+        <!-- mobile -->
+        <div class="container mobile_inst" style="position: relative;">
+            <div class="inst_link-wrapper">
+                <h2 class="inst_title">Посмотрите мой инстаграм</h2>
+                <a href="#" class="inst_link">@ dmitry__streha <img src="./img/main_inst.png" alt="inst" class="inst_link_img"></a>
+            </div>
+            <div class="red__line"></div>
+
+            <div class="inst_photos">
+                <img src="./img/inst1.png" alt="photo" class="inst_photos_img">
+                <img src="./img/inst2.png" alt="photo" class="inst_photos_img">
+                
+                
+                <img src="./img/blog_img_1.png" alt="photo" class="inst_photos_img">
+            </div>
+            <hr class="inst_line">
+        </div>
 
     </section>
     <section id="choice" class="choice">
-        <div class="container justPoint">
+        <div class="container justPoint" id="review">
             <h2 class="choice_title">Выбери свой вариант праздника!</h2>
             <h2 class="choice_titleBack">Цены</р>
                 <h3 class="choice_subtitle">* Цена может измениться при заказе доп. услуг для мероприятия</h3>
@@ -222,7 +297,7 @@
                 <button class="choice_switcher choice_switcher_corp" onclick="choose2()">Корпоратив</button>
                 <button class="choice_switcher choice_switcher_bth" onclick="choose3()">День Рождения</button>
                 <div class="choice_wedding choice_block">
-                    <div class="choice_block_card">
+                    <div class="choice_block_card choice_block_card-desc">
                         <h2 class="choice_block_card_title">Эконом</h2>
                         <h3 class="choice_block_card_price">$200</h3>
                         <img src="./img/choice_card.png" alt="xz" class="choice_block_card_img">
@@ -240,7 +315,7 @@
                         <button class="choice_block_card_button open">Подробнее</button>
 
                     </div>
-                    <div class="choice_block_card choice_block_card_big">
+                    <div class="choice_block_card choice_block_card-desc choice_block_card_big">
                         <h2 class="choice_block_card_title">Стандарт</h2>
                         <h3 class="choice_block_card_price">$300</h3>
                         <img src="./img/choice_card.png" alt="xz" class="choice_block_card_img">
@@ -255,10 +330,10 @@
                             <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ - 3 ч.</li>
                             <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Специальный комплект звука -4 ч</li>
                         </ul>
-                        <button class="choice_block_card_button weddingBtn open">Подробнее</button>
+                        <button class="choice_block_card_button open">Подробнее</button>
 
                     </div>
-                    <div class="choice_block_card">
+                    <div class="choice_block_card choice_block_card-desc">
                         <h2 class="choice_block_card_title">Премиум</h2>
                         <h3 class="choice_block_card_price">$450</h3>
                         <img src="./img/choice_card.png" alt="xz" class="choice_block_card_img">
@@ -276,6 +351,8 @@
                         <button class="choice_block_card_button  open">Подробнее</button>
 
                     </div>
+    
+                    
                 </div>
                 <div class="choice_corp choice_block">
                     <div class="choice_block_card">
@@ -474,9 +551,368 @@
 
         </div>
         </div>
+    </section> 
+    <section id="mobile__choice">
+        <div class="mobile__choice">
+            <div class="slider-dots-choice">
+                <div class="slider-dots_item-choice" onclick="currentSlideChoice(1)">Cвадьба</div> 
+                <div class="slider-dots_item-choice" onclick="currentSlideChoice(2)">Корпоратив</div> 
+                <div class="slider-dots_item-choice" onclick="currentSlideChoice(3)">День Рождения</div> 
+            </div>
+            <div class="slider-choice">
+                <div class="item-choice">
+                    <div class="item-choice-conteiner">
+        
+                        <div class="slider">
+                            <div class="item">
+                                <div class="choice_block_card">
+                                    <h2 class="choice_block_card_title">Эконом</h2>
+                                    <h3 class="choice_block_card_price">$200</h3>
+                                    <div class="choice_redline"></div>
+                                    <p class="choice_block_card_text">Подойдет для небольшой свадьбы или выездной регистрации</p>
+                                    <h3 class="choice_block_card_listName">Что входит в пакет </h3>
+                                    <ul class="choice_block_card_list">
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Ведение мероприятия -4 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Администрирование - 4 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Звуковое сопровождение - 3 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ - 3 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Минимальный комплект звука -4 ч</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Индивидуальный сценарий </li>
+                                    </ul>
+                                    <button class="choice_block_card_button open">Подробнее</button>
+                                
+                                </div>
+                            </div>
+                        
+                            <div class="item">
+                                <div class="choice_block_card choice_block_card_big">
+                                    <h2 class="choice_block_card_title">Стандарт</h2>
+                                    <h3 class="choice_block_card_price">$300</h3>
+                                    <div class="choice_redline"></div>
+                                    <p class="choice_block_card_text">Стандартный вариант проведения вашей свадьбы с индивидуальным подходом</p>
+                                    <h3 class="choice_block_card_listName">Что входит в пакет </h3>
+                                    <ul class="choice_block_card_list">
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Индивидуальный сценарий </li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Ведение мероприятия -6 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Администрирование - 6 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Звуковое сопровождение - 6 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ - 3 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Специальный комплект звука -4 ч</li>
+                                    </ul>
+                                    <button class="choice_block_card_button open">Подробнее</button>
+                                
+                                </div>
+                            </div>
+                        
+                            <div class="item">
+                                <div class="choice_block_card">
+                                    <h2 class="choice_block_card_title">Премиум</h2>
+                                    <h3 class="choice_block_card_price">$450</h3>
+                                    <div class="choice_redline"></div>
+                                    <p class="choice_block_card_text">Премиум позволит вам освободится от рутины перед праздником</p>
+                                    <h3 class="choice_block_card_listName">Что входит в пакет </h3>
+                                    <ul class="choice_block_card_list">
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Эксклюзивный сценарий</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Помощь в организации праздника </li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Длительность мероприятия - 7ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">VIP сопровождение</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ - 6 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Специальный комплект звука -6 ч.</li>
+                                    </ul>
+                                    <button class="choice_block_card_button  open">Подробнее</button>
+                                
+                                </div>
+                            </div>
+                        
+                        </div>   
+                        <div class="slider-dots">
+                            <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+                            <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+                            <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+                        </div>
+        
+                    </div>
+                </div>
+            
+                <div class="item-choice">
+                    <div class="item-choice-conteiner">
+        
+                        <div class="slider">
+                            <div class="item-2">
+                                <div class="choice_block_card">
+                                    <h2 class="choice_block_card_title">Эконом</h2>
+                                    <h3 class="choice_block_card_price">$150</h3>
+                                    <div class="choice_redline"></div>
+                                    <p class="choice_block_card_text">Подойдет для небольшого  праздника вашей компании или фуршета</p>
+                                    <h3 class="choice_block_card_listName">Что входит в пакет </h3>
+                                    <ul class="choice_block_card_list">
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Ведение мероприятия -2.5 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Администрирование - 2.5 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Звуковое сопровождение - 1.5 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ - 2.5 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Минимальный комплект звука -2.5 ч</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Индивидуальный сценарий </li>
+                                    </ul>
+                                    <button class="choice_block_card_button open">Подробнее</button>
+                                
+                                </div>
+                            </div>
+                        
+                            <div class="item-2">
+                                <div class="choice_block_card choice_block_card_big">
+                                    <h2 class="choice_block_card_title">Стандарт</h2>
+                                    <h3 class="choice_block_card_price">$250</h3>
+                                    <div class="choice_redline"></div>
+                                    <p class="choice_block_card_text">Стандартный вариант проведения корпаративка компании</p>
+                                    <h3 class="choice_block_card_listName">Что входит в пакет </h3>
+                                    <ul class="choice_block_card_list">
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Индивидуальный сценарий </li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Ведение мероприятия -4.5 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Администрирование - 4.5 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Звуковое сопровождение - 4.5 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ - 4.5 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Специальный комплект звука -4.5 ч</li>
+                                    </ul>
+                                    <button class="choice_block_card_button open">Подробнее</button>
+                                
+                                </div>
+                            </div>
+                        
+                            <div class="item-2">
+                                <div class="choice_block_card">
+                                    <h2 class="choice_block_card_title">Премиум</h2>
+                                    <h3 class="choice_block_card_price">$400</h3>
+                                    <div class="choice_redline"></div>
+                                    <p class="choice_block_card_text">Премиум позволит вам освободится от рутины перед праздником</p>
+                                    <h3 class="choice_block_card_listName">Что входит в пакет </h3>
+                                    <ul class="choice_block_card_list">
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Эксклюзивный сценарий</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Помощь в организации праздника </li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Длительность мероприятия - 6 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">VIP сопровождение</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ - 4.5 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Специальный комплект звука - 5 ч.</li>
+                                    </ul>
+                                    <button class="choice_block_card_button  open">Подробнее</button>
+                                
+                                </div>
+                            </div>
+                        
+                        </div>   
+                        <div class="slider-dots">
+                            <span class="slider-dots_item-2" onclick="currentSlide2(1)"></span> 
+                            <span class="slider-dots_item-2" onclick="currentSlide2(2)"></span> 
+                            <span class="slider-dots_item-2" onclick="currentSlide2(3)"></span> 
+                        </div>
+        
+                    </div>
+                </div>
+            
+                <div class="item-choice">
+                    <div class="item-choice-conteiner">
+        
+                        <div class="slider">
+                            <div class="item-3">
+                                <div class="choice_block_card">
+                                    <h2 class="choice_block_card_title">Эконом</h2>
+                                    <h3 class="choice_block_card_price">$150</h3>
+                                    <div class="choice_redline"></div>
+                                    <p class="choice_block_card_text">Отлично подойдёт для проведения Дня Рождения в компании близких </p>
+                                    <h3 class="choice_block_card_listName">Что входит в пакет </h3>
+                                    <ul class="choice_block_card_list">
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Ведение мероприятия - 2.5 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Администрирование - 2.5 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Звуковое сопровождение - 1.5 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ - 2.5 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Минимальный комплект звука -2.5 ч</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Индивидуальный сценарий </li>
+                                    </ul>
+                                    <button class="choice_block_card_button open">Подробнее</button>
+                                
+                                </div>
+                            </div>
+                        
+                            <div class="item-3">
+                                <div class="choice_block_card choice_block_card_big">
+                                    <h2 class="choice_block_card_title">Стандарт</h2>
+                                    <h3 class="choice_block_card_price">$250</h3>
+                                    <div class="choice_redline"></div>
+                                    <p class="choice_block_card_text">Индивидуальный сценарий проведения любово вашего торжества </p>
+                                    <h3 class="choice_block_card_listName">Что входит в пакет </h3>
+                                    <ul class="choice_block_card_list">
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Индивидуальный сценарий </li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Ведение мероприятия -6 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Администрирование - 6 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Звуковое сопровождение - 6 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ - 6 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Специальный комплект звука - 6 ч</li>
+                                    </ul>
+                                    <button class="choice_block_card_button open">Подробнее</button>
+                                
+                                </div>
+                            </div>
+                        
+                            <div class="item-3">
+                                <div class="choice_block_card">
+                                    <h2 class="choice_block_card_title">Премиум</h2>
+                                    <h3 class="choice_block_card_price">$400</h3>
+                                    <div class="choice_redline"></div>
+                                    <p class="choice_block_card_text">Премиум позволит вам освободится от рутины перед праздником</p>
+                                    <h3 class="choice_block_card_listName">Что входит в пакет </h3>
+                                    <ul class="choice_block_card_list">
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Эксклюзивный сценарий</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Помощь в организации праздника </li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Длительность мероприятия - 6 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">VIP сопровождение</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Профисиональны DJ - 4.5 ч.</li>
+                                        <li class="choice_block_card_list_item"><img src="./img/list_type.png" alt="type" class="choice_block_card_list_item_type">Специальный комплект звука - 5 ч.</li>
+                                    </ul>
+                                    <button class="choice_block_card_button  open">Подробнее</button>
+                                
+                                </div>
+                            </div>
+                        
+                        </div>   
+                        <div class="slider-dots">
+                            <span class="slider-dots_item-3" onclick="currentSlide3(1)"></span> 
+                            <span class="slider-dots_item-3" onclick="currentSlide3(2)"></span> 
+                            <span class="slider-dots_item-3" onclick="currentSlide3(3)"></span> 
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+        <div class="slider-review">
+            <div class="item-review">
+                <div class="review_card" id="review_card">
+                    <img src="./img/comments_big3.png" alt="photo from celebrating" class="review_user-img">
+                    <div class="review_card-wrapper">
+                        <div class="review_card-greade">
+                            <img src="./img/dark_logo.png" alt="logo" class="item__review_card_logo">
+                            <img src="./img/comments_mark.png" alt="mark" class="item__review_card_mark">
+                        </div>
+                        <div class="review_card-text">
+                            <p>
+                                Все просто прошло шикарно! Хочется сново и сново возвращать этот день)! Всем очень довольны и обязательно будем советовать выбирать только Вас!)
+                            </p>
+                        </div>
+                        <div class="review_card-user">
+                            <img src="./img/comments_small1.png" alt="photo" class="item__review_card_photo">
+                      
+                            <div class="user__text">
+                                <p class="review_user-name">Евгения</p>
+                                <p class="review_event">Корпаротив</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-review">
+                <div class="review_card">
+                    <img src="./img/comments_big1.png" alt="photo from celebrating" class="review_user-img">
+                    <div class="review_card-wrapper">
+                        <div class="review_card-greade">
+                            <img src="./img/dark_logo.png" alt="logo" class="item__review_card_logo">
+                            <img src="./img/comments_mark.png" alt="mark" class="item__review_card_mark">
+                        </div>
+                        <div class="review_card-text">
+                            <p>Красивое оформление, отличные артисты, абсолютно волшебный первый танец, неожиданные и очень классные творческие сюрпризы от гостей - это и многое другое не дает мне возможности разместить меньший фото-отчет с этой свадьбы!)</p>
+                        </div>
+                        <div class="review_card-user">
+                            <img src="./img/comments_small1.png" alt="photo" class="item__review_card_photo">
+                         
+                            <div class="user__text">
+                                <p class="review_user-name">Виктория и Евгений</p>
+                                <p class="review_event">Свадьба</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-review">
+                <div class="review_card">
+                    <img src="./img/comments_big2.png" alt="photo from celebrating" class="review_user-img">
+                    <div class="review_card-wrapper">
+                        <div class="review_card-greade">
+                            <img src="./img/dark_logo.png" alt="logo" class="item__review_card_logo">
+                            <img src="./img/comments_mark.png" alt="mark" class="item__review_card_mark">
+                        </div>
+                        <div class="review_card-text">
+                            <p>
+                                Хотим сказать огромное спасибо Дмитрию за прекрасное проведения праздника. Друзья говорят, что наша свадьба лучшая, на каких они были)! И за это ещё раз спасибо Дмитрию. Будем рекомендовать обязательно! Успехов!!!!
+                            </p>
+                        </div>
+                        <div class="review_card-user">
+                            <img src="./img/comments_small1.png" alt="photo" class="item__review_card_photo">
+                            <div class="user__text">
+                                <p class="review_user-name">Елена и Роман</p>
+                                <p class="review_event">Свадьба</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-review">
+                <div class="review_card">
+                    <img src="./img/comments_big4.png" alt="photo from celebrating" class="review_user-img">
+                    <div class="review_card-wrapper">
+                        <div class="review_card-greade">
+                            <img src="./img/dark_logo.png" alt="logo" class="item__review_card_logo">
+                            <img src="./img/comments_mark.png" alt="mark" class="item__review_card_mark">
+                        </div>
+                        <div class="review_card-text">
+                            <p>
+                                Хотим сказать огромное вам спасибо! На нашей празднике все было просто шикарно! Все прошло так как мы даже представить не могли. Все гости остались в полном восторге, что уж говорить о нас). Большое спасибо, что был с нами в такой важный для нас день!)
+                            </p>
+                        </div>
+                        <div class="review_card-user">
+                            <img src="./img/comments_small1.png" alt="photo" class="item__review_card_photo">
+                            <div class="user__text">
+                                <p class="review_user-name">Эльвира</p>
+                                <p class="review_event">Корпаротив</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <div class="item-review">
+                <div class="review_card">
+                    <img src="./img/comments_big5.png" alt="photo from celebrating" class="review_user-img">
+                    <div class="review_card-wrapper">
+                        <div class="review_card-greade">
+                            <img src="./img/dark_logo.png" alt="logo" class="item__review_card_logo">
+                            <img src="./img/comments_mark.png" alt="mark" class="item__review_card_mark">
+                        </div>
+                        <div class="review_card-text">
+                            <p>
+                                Большое спасибо Диме! Мы хотели, чтобы наша свадьба была душевным дружеским мероприятием с атмосферой творчества Без привычных традиций и конкурсов. И Дима поймал эту волну, все было отлично, непринужденно, легко и интересно! 
+                            </p>
+                        </div>
+                        <div class="review_card-user">
+                            <img src="./img/comments_small1.png" alt="photo" class="item__review_card_photo">
+                            <div class="user__text">
+                                <p class="review_user-name">Вероника и Никита</p>
+                                <p class="review_event">Свадьба</p>
+                            </div>
+/
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="btn__block">
+                <button class="prev review__btn" onclick="prevSlide()">&#10094;</button>
+                <button class="next review__btn" onclick="nextSlide()">&#10095;</button>
+            </div>
+
+        </div>         
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <h2 class="contact_title">Оставьте заявку онлайн</h2>
             <h2 class="contact_titleBack">Контакты</h2>
@@ -486,7 +922,10 @@
                 <input type="text" name="user_name" id="" placeholder="Ваше имя" required class="contact_form_input">
 
                 <input type="num" name="user_phone" id="" placeholder="Ваш номер" required class="contact_form_input phone">
-                <input type="num" name="user_date" id="" placeholder="Выберите дату" required class="contact_form_input date">
+                
+                <input type="text" name="user_date" id="" placeholder="Выберите дату" required class="contact_form_input date">
+               
+                
                 <br>
                 <button type="submit" class="contact_form_button">Оставить заявку </button>
             </form>
@@ -495,19 +934,23 @@
     <footer class="footer">
         <div class="container">
             <div class="footer_contact">
-                <a href="tel:+375292900600" class="footer_contact_tel">
-                    <img src="./img/footer_phone.png" alt="Phone" class="footer_contact_tel_img">
-                    <h3 class="footer_contact_tel_name">Телефон</h3>
-                    <h4 class="footer_contact_tel_num">+375(29)2-900-600</h4>
-                    <hr class="footer_contact_tel_line">
-                </a>
-                <a href="mailto:mitya.streha@gmail.com" class="footer_contact_mail">
-                    <img src="./img/footer_gmail.png" alt="gmail" class="footer_contact_mail_img">
-                    <h3 class="footer_contact_mail_name">Эл. почта</h3>
-                    <h4 class="footer_contact_mail_num">mitya.streha@gmail.com</h4>
-                    <hr class="footer_contact_mail_line">
-                </a>
-                <p class="footer_contact_text">Свяжитесь со мной удобным <br> для вас способом: </p>
+                <p class="footer_mobile_contact_text">Свяжитесь со мной удобным <br> для вас способом: </p>
+                <div class="contact__info">
+                    <a href="tel:+375292900600" class="footer_contact_tel">
+                        <img src="./img/footer_phone.png" alt="Phone" class="footer_contact_tel_img">
+                        <h3 class="footer_contact_tel_name">Телефон</h3>
+                        <h4 class="footer_contact_tel_num">+375(29)2-900-600</h4>
+                        <hr class="footer_contact_tel_line">
+                    </a>
+                    <a href="mailto:mitya.streha@gmail.com" class="footer_contact_mail">
+                        <img src="./img/footer_gmail.png" alt="gmail" class="footer_contact_mail_img">
+                        <h3 class="footer_contact_mail_name">Эл. почта</h3>
+                        <h4 class="footer_contact_mail_num">mitya.streha@gmail.com</h4>
+                        <hr class="footer_contact_mail_line">
+                    </a>
+                    <p class="footer_contact_text">Свяжитесь со мной удобным <br> для вас способом: </p>
+                </div>
+
             </div>
             <div class="footer_social">
                 <img src="./img/logo.png" alt="logo" class="footer_social_logo">
@@ -547,10 +990,23 @@
         <div class="container" style="position: relative;">
             <div class="blogpop_card blogpop1_card">
                 <div class="blogpop1_card_slider blogpop_card_slider">
-                    <img src="./img/blogpop1_img1.png" alt="photo" class="blogpop_card_slider_img">
+                    <div class="blogpop_card_slider_img">
+                        <img src="./img/blogpop1_img1.png" alt="photo">
+
+                    </div>
+                    <div class="blogpop_card_slider_img">
+                        <img src="./img/blogpop1_img2.png" alt="photo" >
+                    </div>
+                    <div class="blogpop_card_slider_img">
+                        <img src="./img/blogpop1_img3.png" alt="photo" >
+                    </div>
+                    <div class="blogpop_card_slider_img">
+                        <img src="./img/blogpop1_img4.png" alt="photo" >
+                    </div>
+                    <!-- <img src="./img/blogpop1_img1.png" alt="photo" class="blogpop_card_slider_img">
                     <img src="./img/blogpop1_img2.png" alt="photo" class="blogpop_card_slider_img">
                     <img src="./img/blogpop1_img3.png" alt="photo" class="blogpop_card_slider_img">
-                    <img src="./img/blogpop1_img4.png" alt="photo" class="blogpop_card_slider_img">
+                    <img src="./img/blogpop1_img4.png" alt="photo" class="blogpop_card_slider_img"> -->
                 </div>
                 <h2 class="blogpop_card_title">Свадьба <br> Виктории и Евгения </h2>
                 <p class="blogpop_card_text">Хочется поделиться с вами замечательной свадьбой Тем более, что это свадьба моего брата Евгения и уже теперешней его жены Виктории!! 🤩 Хочу, чтобы у них появилось вдвое больше тех качеств, которыми должны обладать крепкие семьи!! Люблю
@@ -566,9 +1022,18 @@
         <div class="container" style="position: relative;">
             <div class="blogpop_card blogpop2_card">
                 <div class="blogpop2_card_slider">
-                    <img src="./img/blogpop2_img1.png" alt="photo" class="blogpop_card_slider_img">
+                    <div class="blogpop_card_slider_img">
+                        <img src="./img/blogpop2_img1.png" alt="photo">  
+                    </div>
+                    <div class="blogpop_card_slider_img">
+                        <img src="./img/blogpop2_img2.png" alt="photo">  
+                    </div>
+                    <div class="blogpop_card_slider_img">
+                        <img src="./img/blogpop2_img3.png" alt="photo">  
+                    </div>
+                    <!-- <img src="./img/blogpop2_img1.png" alt="photo" class="blogpop_card_slider_img">
                     <img src="./img/blogpop2_img2.png" alt="photo" class="blogpop_card_slider_img">
-                    <img src="./img/blogpop2_img3.png" alt="photo" class="blogpop_card_slider_img">
+                    <img src="./img/blogpop2_img3.png" alt="photo" class="blogpop_card_slider_img"> -->
                 </div>
                 <h2 class="blogpop_card_title">Галоужин <br> «OOO МФП» </h2>
                 <p class="blogpop_card_text">Стал ещё немного смелее! Не без помощи близких людей, не без помощи талантливых коллег... Буду стараться отвечать вам тем же!! И конечно же благодаря Вам, люди, которые приглашают меня вести свои мероприятия, будут оставаться более довольными
@@ -584,9 +1049,18 @@
         <div class="container" style="position: relative;">
             <div class="blogpop_card blogpop3_card">
                 <div class="blogpop3_card_slider">
-                    <img src="./img/blogpop3_img1.png" alt="photo" class="blogpop_card_slider_img">
+                    <div class="blogpop_card_slider_img">
+                        <img src="./img/blogpop3_img1.png" alt="photo">  
+                    </div>
+                    <div class="blogpop_card_slider_img">
+                        <img src="./img/blogpop3_img2.png" alt="photo">  
+                    </div>
+                    <div class="blogpop_card_slider_img">
+                        <img src="./img/blogpop3_img3.png" alt="photo">  
+                    </div>
+                    <!-- <img src="./img/blogpop3_img1.png" alt="photo" class="blogpop_card_slider_img">
                     <img src="./img/blogpop3_img2.png" alt="photo" class="blogpop_card_slider_img">
-                    <img src="./img/blogpop3_img3.png" alt="photo" class="blogpop_card_slider_img">
+                    <img src="./img/blogpop3_img3.png" alt="photo" class="blogpop_card_slider_img"> -->
                 </div>
                 <h2 class="blogpop_card_title">Свадьба<br> Романа и Елены</h2>
                 <p class="blogpop_card_text">Поженили прекрасную пару! Как всегда хочется пожелать побольше светлого их новой семье! Было весело! Вы молодцы, ребята😃</p>
@@ -601,10 +1075,22 @@
         <div class="container" style="position: relative;">
             <div class="blogpop_card blogpop4_card">
                 <div class="blogpop4_card_slider">
-                    <img src="./img/blogpop4_img1.png" alt="photo" class="blogpop_card_slider_img">
+                    <div class="blogpop_card_slider_img">
+                        <img src="./img/blogpop4_img1.png" alt="photo">  
+                    </div>
+                    <div class="blogpop_card_slider_img">
+                        <img src="./img/blogpop4_img2.png" alt="photo">  
+                    </div>
+                    <div class="blogpop_card_slider_img">
+                        <img src="./img/blogpop4_img3.png" alt="photo">  
+                    </div>
+                    <div class="blogpop_card_slider_img">
+                        <img src="./img/blogpop4_img4.png" alt="photo">  
+                    </div>
+                    <!-- <img src="./img/blogpop4_img1.png" alt="photo" class="blogpop_card_slider_img">
                     <img src="./img/blogpop4_img2.png" alt="photo" class="blogpop_card_slider_img">
                     <img src="./img/blogpop4_img3.png" alt="photo" class="blogpop_card_slider_img">
-                    <img src="./img/blogpop4_img4.png" alt="photo" class="blogpop_card_slider_img">
+                    <img src="./img/blogpop4_img4.png" alt="photo" class="blogpop_card_slider_img"> -->
                 </div>
                 <h2 class="blogpop_card_title">Новогдний корпоратив</h2>
                 <p class="blogpop_card_text">Новогодние праздники проходят быстрее, чем хотелось бы🧐.. Надеюсь все успели поздравить, обнять и поцеловать своих близких и родных!! Ещё раз хочу пожелать Всем тепла, внимания, понимания и ласки, и конечно же верьте в чудо и будьте чудом!!</p>
@@ -618,11 +1104,24 @@
         <div class="container" style="position: relative;">
             <div class="blogpop_card blogpop5_card">
                 <div class="blogpop5_card_slider">
-                    <img src="./img/blogpop5_img1.png" alt="photo" class="blogpop_card_slider_img">
+                    <div class="blogpop_card_slider_img">
+                        <img src="./img/blogpop5_img1.png" alt="photo">  
+                    </div>
+                    <div class="blogpop_card_slider_img">
+                        <img src="./img/blogpop5_img2.png" alt="photo">  
+                    </div>
+                    <div class="blogpop_card_slider_img">
+                        <img src="./img/blogpop5_img3.png" alt="photo">  
+                    </div>
+                    <div class="blogpop_card_slider_img">
+                        <img src="./img/blogpop5_img4.png" alt="photo">  
+                    </div>
+                    <!-- <img src="./img/blogpop5_img1.png" alt="photo" class="blogpop_card_slider_img">
                     <img src="./img/blogpop5_img2.png" alt="photo" class="blogpop_card_slider_img">
                     <img src="./img/blogpop5_img3.png" alt="photo" class="blogpop_card_slider_img">
-                    <img src="./img/blogpop5_img4.png" alt="photo" class="blogpop_card_slider_img">
+                    <img src="./img/blogpop5_img4.png" alt="photo" class="blogpop_card_slider_img"> -->
                 </div>
+
                 <h2 class="blogpop_card_title">Юбилей <br> Екатерины Олеговны</h2>
                 <p class="blogpop_card_text">Поздравляю с таким замечательным красивым юбилеем, 50 лет-это гордость, это мудрость и опыт. Желаю, чтобы силы, бодрость духа и здоровье всегда шагали в ногу с вами. Пусть улыбки родных согревают и оберегают вас.
                 </p>
@@ -631,13 +1130,39 @@
                 <img src="./img/next_arrow.png" alt="next" class="blogpop5_card_next blogpop_card_next">
             </div>
         </div>
+        
     </section>
+    <section id="hamburger__nav">
+        <div class="humburger__space" onclick="toggleHumb()"></div>
+        <div class="humburger__main_block">
+            <img src="./img/logoDark.png" alt="logo" class="hamburger__logo">
+        <div class="hamburger__nav">
+            <a href="#stages" class="hamburger__nav-item" onclick="toggleHumb()">Этапы работы</a>
+            <a href="#review_card" class="hamburger__nav-item" onclick="toggleHumb()">Отзывы</a>
+            <a href="#blog" class="hamburger__nav-item" onclick="toggleHumb()">Блог</a>
+            <a href="#mobile__choice" class="hamburger__nav-item" onclick="toggleHumb()">Цены</a>
+            <a href="#contact" class="hamburger__nav-item" onclick="toggleHumb()">Контакты</a>
+        </div>
+        <div class="hamburgar__tel">+375(29)2-900-600</div>
+        <div class="hamburger_redline"></div>
+        <h4 class="hamburger__call-text">Заказать звонок</h4>
+        <a href="/" class="hamburger__inst-link">
+            <img src="./img/main_inst.png" alt="">
+        </a>
+        </div>
+        
+        <div class="close__hamburger" >
+            <img onclick="toggleHumb()" src="./img/close.png" alt="close"> 
+        </div>
+    </section>
+
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="./js/jquery.maskedinput.min.js"></script>
     <script src="./js/script.js"></script>
+    
 </body>
 
 </html>

@@ -6,7 +6,7 @@
 $token = "1937965576:AAEGSiV33Iw_rWyim2TylnIeOrPr5kLlKso";
 
 //Сюда вставляем chat_id
-$chat_id = "-1001529004217";
+$chat_id = "-1001543115368";
 
 //Определяем переменные для передачи данных из нашей формы
 if ($_POST['act'] == 'order') {

@@ -986,3 +986,13 @@
         }
     }
 }
+
+@media (max-width: 480px){
+    .menu_logo{
+        display: block;
+        background-color: red;
+    }
+    .main_name{
+        color: red;
+    }
+}
